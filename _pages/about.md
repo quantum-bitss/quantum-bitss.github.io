@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Nanjun ZHou"
+title: "Nanjun Zhou"
 author_profile: true
 redirect_from: 
   - /about/
