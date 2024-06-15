@@ -11,7 +11,7 @@ I'm a third year undergraduate student from [School of CSE](https://www2.scut.ed
 
 I am very fortunate to work as a research intern under the supervision of [Prof. Li Liu](https://liliu-avril.github.io/) from [AI Thrust](https://ait.hkust-gz.edu.cn/), Hong Kong University of Science and Technology(Guangzhou).
 
-You can find my CV here: [XX's Curriculum Vitae](../assets/CV.pdf).
+You can find my CV here: [My Vitae](../assets/CV.pdf).
 [Email](202130561134@mail.scut.edu.cn) / [Github](https://github.com/quantum-bitss/) 
 
 A data-driven personal website
