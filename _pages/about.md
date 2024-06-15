@@ -7,7 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-I'm a third year undergraduate student from [School of CSE](https://www2.scut.edu.cn/cs/), [South China University of Technology](https://www.scut.edu.cn/new/). Currently, my research interests focus on AI security, Trustworthy AI and Machine Learning. I am very fortunate to work as a research intern under the supervision of [Prof. Li Liu](https://liliu-avril.github.io/) from [AI Thrust](https://cs.pku.edu.cn/), Hong Kong University of Science and Technology(Guangzhou).
+I'm a third year undergraduate student from [School of CSE](https://www2.scut.edu.cn/cs/), [South China University of Technology](https://www.scut.edu.cn/new/). Currently, my research interests focus on AI security, Trustworthy AI and Machine Learning. 
+
+I am very fortunate to work as a research intern under the supervision of [Prof. Li Liu](https://liliu-avril.github.io/) from [AI Thrust](https://cs.pku.edu.cn/), Hong Kong University of Science and Technology(Guangzhou).
 
 You can find my CV here: [XX's Curriculum Vitae](../assets/CV.pdf).
 [Email](202130561134@mail.scut.edu.cn) / [Github](https://github.com/quantum-bitss/) 
