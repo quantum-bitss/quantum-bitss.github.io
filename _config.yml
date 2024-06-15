@@ -12,7 +12,7 @@ title                    : "Nanjun Zhou/Personal Homepage"
 title_separator          : "-"
 name                     : &name "Nanjun Zhou"
 description              : &description "a CS student from SCUT"
-url                      : https://quantum-bitss.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://quantum-bitss.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "quantum-bitss/quantum-bitss.github.io"
 
