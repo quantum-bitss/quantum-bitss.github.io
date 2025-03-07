@@ -7,14 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-I'm a third year undergraduate student from [School of CSE](https://www2.scut.edu.cn/cs/), [South China University of Technology](https://www.scut.edu.cn/new/). Currently, my research interests focus on AI security, Trustworthy AI and Machine Learning. 
+I'm a final year undergraduate student from [Department of CSE](https://www2.scut.edu.cn/cs/), [South China University of Technology](https://www.scut.edu.cn/new/), majoring in Computer Science and Technology (Elite Class). I am very fortunate to work as a research assistant under the supervision of [Prof. Li Liu](https://liliu-avril.github.io/) from [AI Thrust](https://ait.hkust-gz.edu.cn/), The Hong Kong University of Science and Technology(Guangzhou) and [Prof. Tong Zhang](https://www2.scut.edu.cn/cs/2021/0317/c22284a422099/page.htm) from [DSAIL](http://www.dsail.vip/), South China University of Technology.
 
-I am very fortunate to work as a research intern under the supervision of [Prof. Li Liu](https://liliu-avril.github.io/) from [AI Thrust](https://ait.hkust-gz.edu.cn/), Hong Kong University of Science and Technology(Guangzhou).
+My current research interest focuses on Trustworthy Machine Learning. I'm interested in security issues across all domains of AI, such as Computer Vision and Audio Signal Processing. 
 
-You can find my CV here: [My Vitae](../assets/CV.pdf).
-[Email](202130561134@mail.scut.edu.cn) / [Github](https://github.com/quantum-bitss/) 
-
-A data-driven personal website
+Research Interest
 ======
 Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
 
