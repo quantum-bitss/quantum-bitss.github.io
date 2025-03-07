@@ -13,9 +13,13 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
 
 🔥News
 ======
--[2025.2] Our latest work [BackdoorDM](https://arxiv.org/abs/2502.11798) has been released on ArXiv.
--[2024.12] My first acdemic paper on audio backdoor defense was accepted by [ICASSP 2025](https://2025.ieeeicassp.org/).
--[2024.12] I finished my Software Development Intern at ZTE Corporation.
+-[2025.2] Our latest work [BackdoorDM](https://arxiv.org/abs/2502.11798) on Diffusion Backdoor has been released on ArXiv. Our code is available at [GitHub](https://github.com/linweiii/BackdoorDM).
+
+-[2024.12] My first acdemic paper on audio backdoor defense was accepted by [ICASSP 2025](https://2025.ieeeicassp.org/). Thanks to all my co-authors!
+
+-[2024.12] I completed my Software Development Intern at ZTE Corporation. Thanks to all my mentors and co-workers!
+
+-[2024.9] I joined Data Mangement Group at ZTE Corporation as a Software Development Intern, focusing on the development of a Data Agent.
 
 Publication
 ======
