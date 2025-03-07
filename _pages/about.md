@@ -35,7 +35,7 @@ arXiv Preprint 2025
 
 2025 IEEE International Conference on Acoustics, Speech and Signal Processing
 
-<img src="./images/icassp2025.png" alt="Framework Image" style="float:right; width:300px; margin-left:10px;">
+<img src="../images/icassp2025.png" alt="Framework Image" style="float:right; width:300px; margin-left:10px;">
 
 Create content & metadata
 ------
