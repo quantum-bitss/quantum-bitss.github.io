@@ -15,7 +15,7 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
 ======
 - [2025.02] Our latest work [BackdoorDM](https://arxiv.org/abs/2502.11798) on Diffusion Backdoor has been released on ArXiv. Our code is available at [GitHub](https://github.com/linweiii/BackdoorDM).
 
-- [2024.12] My first acdemic paper on audio backdoor defense was accepted by [ICASSP 2025](https://2025.ieeeicassp.org/). Thanks to all my co-authors!
+- [2024.12] My first acdemic paper on audio backdoor defense was accepted by [ICASSP 2025](https://2025.ieeeicassp.org/). Thanks to the support of my co-authors and Prof. Liu!
 
 - [2024.12] I completed my Software Development Intern at ZTE Corporation. Thanks to all my mentors and co-workers!
 
