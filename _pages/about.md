@@ -7,51 +7,40 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I'm a final year undergraduate student from [Department of CSE](https://www2.scut.edu.cn/cs/), [South China University of Technology](https://www.scut.edu.cn/new/), majoring in Computer Science and Technology (Elite Class). I am very fortunate be supervised by [Prof. Li Liu](https://liliu-avril.github.io/) from [AI Thrust](https://ait.hkust-gz.edu.cn/), The Hong Kong University of Science and Technology(Guangzhou) and [Prof. Tong Zhang](https://www2.scut.edu.cn/cs/2021/0317/c22284a422099/page.htm) from [DSAIL](http://www.dsail.vip/), South China University of Technology.
+Hi! I'm a final year undergraduate student from [Department of CSE](https://www2.scut.edu.cn/cs/), [South China University of Technology](https://www.scut.edu.cn/new/), majoring in Computer Science and Technology (Elite Class). I am very fortunate be supervised by [Prof. Li Liu](https://liliu-avril.github.io/) from [AI Thrust](https://ait.hkust-gz.edu.cn/), HKUST (Guangzhou) and [Prof. Tong Zhang](https://www2.scut.edu.cn/cs/2021/0317/c22284a422099/page.htm) from [DSAIL](http://www.dsail.vip/), South China University of Technology.
 
 My current research interest focuses on **Trustworthy Machine Learning**, particularly on **Backdoor Learning**. I'm interested in security issues across all domains of AI, such as Computer Vision, Audio Signal Processing and Large Language Models. 
 
 🔥News
 ======
--[2025.2] Our latest work [BackdoorDM](https://arxiv.org/abs/2502.11798) on Diffusion Backdoor has been released on ArXiv. Our code is available at [GitHub](https://github.com/linweiii/BackdoorDM).
+- [2025.02] Our latest work [BackdoorDM](https://arxiv.org/abs/2502.11798) on Diffusion Backdoor has been released on ArXiv. Our code is available at [GitHub](https://github.com/linweiii/BackdoorDM).
 
--[2024.12] My first acdemic paper on audio backdoor defense was accepted by [ICASSP 2025](https://2025.ieeeicassp.org/). Thanks to all my co-authors!
+- [2024.12] My first acdemic paper on audio backdoor defense was accepted by [ICASSP 2025](https://2025.ieeeicassp.org/). Thanks to all my co-authors!
 
--[2024.12] I completed my Software Development Intern at ZTE Corporation. Thanks to all my mentors and co-workers!
+- [2024.12] I completed my Software Development Intern at ZTE Corporation. Thanks to all my mentors and co-workers!
 
--[2024.9] I joined Data Mangement Group at ZTE Corporation as a Software Development Intern, focusing on the development of a Data Agent.
+- [2024.09] I joined the Data Mangement Group at ZTE Corporation as a Software Development Intern, focusing on the development of a Data Agent.
 
 📑Research
 ======
 - [BackdoorDM: A Comprehensive Benchmark for Backdoor Learnin in Diffusion Model](https://arxiv.org/abs/2502.11798)
 
-Weilin Lin, **Nanjun Zhou**, Yanyun Wang, Jianze Li, Hui Xiong, Li Liu<sup>#</sup>
+  Weilin Lin, **Nanjun Zhou**, Yanyun Wang, Jianze Li, Hui Xiong, Li Liu<sup>#</sup>, *arXiv Preprint 2025*
 
-_arXiv Preprint 2025_
 
 - [Gradient Norm-based Fine-Tuning for Backdoor Defense in Automatic Speech Recognition](https://arxiv.org/abs/2502.01152)
 
-**Nanjun Zhou<sup>*</sup>**, Weilin Lin<sup>*</sup>, Li Liu<sup>#</sup>
+  **Nanjun Zhou<sup>*</sup>**, Weilin Lin<sup>*</sup>, Li Liu<sup>#</sup>, *2025 IEEE International Conference on Acoustics, Speech and Signal Processing*
 
-_2025 IEEE International Conference on Acoustics, Speech and Signal Processing_
+# ✏️Education
 
+- **South China University of Technology**, Guangzhou, China
 
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+  B.Eng in Computer Science & Technology Elite Class (top 30 students in CS undergraduates), 2021-2025
 
-**Markdown generator**
+# 💻 Experience
 
-I have also created [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
-
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
-
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
-
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+<div style="display: flex; align-items: center;">     
+    <img src="icassp2025.png" alt="Example Image" width="500px" style="margin-right: 10px;">     
+    <p>This is some text that will appear beside the image. The text will not wrap around but stay aligned horizontally.</p> 
+</div>
