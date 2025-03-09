@@ -37,4 +37,4 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
   </p>
 - **The Hong Kong University of Science and Technology (Guangzhou)** <br>
   Research Assistant, 2024.1~Present <br>
-  Advisor: Prof. [Li Liu]([https://nantang.github.io/](https://liliu-avril.github.io/))
+  Advisor: Prof. [Li Liu](https://liliu-avril.github.io/)
