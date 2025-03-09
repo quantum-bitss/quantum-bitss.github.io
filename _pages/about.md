@@ -14,33 +14,27 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
 🔥News
 ======
 - [2025.02] Our latest work [BackdoorDM](https://arxiv.org/abs/2502.11798) on Diffusion Backdoor has been released on ArXiv. Our code is available at [GitHub](https://github.com/linweiii/BackdoorDM).
-
 - [2024.12] My first acdemic paper on audio backdoor defense was accepted by [ICASSP 2025](https://2025.ieeeicassp.org/). Thanks to the support of my co-authors and Prof. Liu!
-
 - [2024.12] I completed my Software Development Intern at ZTE Corporation. Thanks to all my mentors and co-workers!
-
 - [2024.09] I joined the Data Mangement Group at ZTE Corporation as a Software Development Intern, focusing on the development of a Data Agent.
 
 📑Research
 ======
 - [BackdoorDM: A Comprehensive Benchmark for Backdoor Learnin in Diffusion Model](https://arxiv.org/abs/2502.11798)
-
   Weilin Lin, **Nanjun Zhou**, Yanyun Wang, Jianze Li, Hui Xiong, Li Liu<sup>#</sup>, in *arXiv Preprint 2025*
 
-
 - [Gradient Norm-based Fine-Tuning for Backdoor Defense in Automatic Speech Recognition](https://arxiv.org/abs/2502.01152)
-
   **Nanjun Zhou<sup>*</sup>**, Weilin Lin<sup>*</sup>, Li Liu<sup>#</sup>, in *2025 IEEE International Conference on Acoustics, Speech and Signal Processing*
 
 # ✏️Education
 
 - **South China University of Technology**, Guangzhou, China
-
   B.Eng in Computer Science & Technology Elite Class (top 30 students in CS undergraduates), 2021-2025
 
 # 💻 Experience
-
-<div style="display: flex; align-items: center;">     
-    <img src="icassp2025.png" alt="Example Image" width="500px" style="margin-right: 10px;">     
-    <p>This is some text that will appear beside the image. The text will not wrap around but stay aligned horizontally.</p> 
-</div>
+  <p>
+    <img src="images/hkust.png" alt="HKUST" style="float: right; margin-right: 20px;; width: 60px; height: 80px;">
+  </p>
+- **The Hong Kong University of Science and Technology (Guangzhou)** <br>
+  Research Assistant, 2024.1~Present <br>
+  Advisor: Prof. [Li Liu]([https://nantang.github.io/](https://liliu-avril.github.io/))
