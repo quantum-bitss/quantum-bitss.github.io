@@ -35,27 +35,27 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
   <p>
     <img src="images/hkust.png" alt="HKUST" style="float: right; margin-right: 20px;; width: 60px; height: 80px;">
   </p>
-- **The Hong Kong University of Science and Technology (Guangzhou)**, Guangzhou, China <br>
+- **HKUST (Guangzhou)**, Guangzhou, China <br>
   Research Assistant, [AI Thrust](https://ait.hkust-gz.edu.cn/), 2024.1~Present <br>
   Supervisor: Prof. [Li Liu](https://liliu-avril.github.io/) <br>
   Topic: Backdoor Learning, Audio Security
 
   <p>
-    <img src="images/zte.png" alt="ZTE" style="float: right; margin-right: 20px;; width: 60px; height: 80px;">
+    <img src="images/zte.png" alt="ZTE" style="float: right; margin-right: 20px;; width: 60px; height: 60px;">
   </p>
 - **ZTE Corporation** <br>
   Software Development Engineer, Data Management Group, 2024.9~2024.12 <br>
   Topic: AI for Data, NL2SQL
 
   <p>
-    <img src="images/chinatelecom.png" alt="ChinaTelecom" style="float: right; margin-right: 20px;; width: 60px; height: 80px;">
+    <img src="images/chinatelecom.png" alt="ChinaTelecom" style="float: right; margin-right: 20px;; width: 60px; height: 60px;">
   </p>
 - **E-Surfing IoT, China Telecom**, Guangzhou, China <br>
   AI Application Research Intern, Department of Technology and Advancement, 2024.7~2024.9 <br>
   Topic: LLM Deployment, RAG, Agent
 
   <p>
-    <img src="images/scut.png" alt="SCUT" style="float: right; margin-right: 20px;; width: 60px; height: 80px;">
+    <img src="images/scut.png" alt="SCUT" style="float: right; margin-right: 20px;; width: 60px; height: 60px;">
   </p>
 - **South China University of Technology**, Guangzhou, China <br>
   Student Researcher, [DSAIL](http://www.dsail.vip/), 2023.3~2024.4 <br>
