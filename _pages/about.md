@@ -21,6 +21,7 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
 📑Research
 ======
 - [BackdoorDM: A Comprehensive Benchmark for Backdoor Learnin in Diffusion Model](https://arxiv.org/abs/2502.11798)
+  
   Weilin Lin, **Nanjun Zhou**, Yanyun Wang, Jianze Li, Hui Xiong, Li Liu<sup>#</sup>, in *arXiv Preprint 2025*
 
 - [Gradient Norm-based Fine-Tuning for Backdoor Defense in Automatic Speech Recognition](https://arxiv.org/abs/2502.01152)
@@ -29,6 +30,7 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
 # ✏️Education
 
 - **South China University of Technology**, Guangzhou, China
+  
   B.Eng in Computer Science & Technology (Elite Class), 2021-2025
 
 # 💻 Experience
@@ -62,3 +64,10 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
   Supervisor: [Prof. Tong Zhang](https://www2.scut.edu.cn/cs/2021/0317/c22284a422099/page.htm) <br>
   Topic: Music Emotion Recognition
   
+# 🏆 Honors & Awards
+- The Second-Class University Scholarship, 2024
+- MathorCup Mathematical Contest in Modeling: Third Prize, 2023
+- Asia and Pacific Mathematical Contest in Modeling (APMCM): Third Prize, 2022
+- National Mathematical Modeling Contest (Guangdong): Third Prize, 2022
+- Merit Student, 2022
+- The Third-Class University Scholarship, 2022
