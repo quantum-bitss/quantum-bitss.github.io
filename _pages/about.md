@@ -20,7 +20,7 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
 
 📑Research
 ======
-- [BackdoorDM: A Comprehensive Benchmark for Backdoor Learnin in Diffusion Model](https://arxiv.org/abs/2502.11798)  
+- [BackdoorDM: A Comprehensive Benchmark for Backdoor Learnin in Diffusion Model](https://arxiv.org/abs/2502.11798)
   Weilin Lin, **Nanjun Zhou**, Yanyun Wang, Jianze Li, Hui Xiong, Li Liu<sup>#</sup>, in *arXiv Preprint 2025*
 
 - [Gradient Norm-based Fine-Tuning for Backdoor Defense in Automatic Speech Recognition](https://arxiv.org/abs/2502.01152)
@@ -38,21 +38,21 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
 - **The Hong Kong University of Science and Technology (Guangzhou)**, Guangzhou, China <br>
   Research Assistant, [AI Thrust](https://ait.hkust-gz.edu.cn/), 2024.1~Present <br>
   Supervisor: Prof. [Li Liu](https://liliu-avril.github.io/) <br>
-  - Backdoor Learning, Audio Security
+  Topic: Backdoor Learning, Audio Security
 
   <p>
     <img src="images/zte.png" alt="ZTE" style="float: right; margin-right: 20px;; width: 60px; height: 80px;">
   </p>
 - **ZTE Corporation** <br>
   Software Development Engineer, Data Management Group, 2024.9~2024.12 <br>
-  - AI for Data, NL2SQL
+  Topic: AI for Data, NL2SQL
 
   <p>
     <img src="images/chinatelecom.png" alt="ChinaTelecom" style="float: right; margin-right: 20px;; width: 60px; height: 80px;">
   </p>
 - **E-Surfing IoT, China Telecom**, Guangzhou, China <br>
   AI Application Research Intern, Department of Technology and Advancement, 2024.7~2024.9 <br>
-  - LLM Deployment, RAG, Agent
+  Topic: LLM Deployment, RAG, Agent
 
   <p>
     <img src="images/scut.png" alt="SCUT" style="float: right; margin-right: 20px;; width: 60px; height: 80px;">
@@ -60,5 +60,5 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
 - **South China University of Technology**, Guangzhou, China <br>
   Student Researcher, [DSAIL](http://www.dsail.vip/), 2023.3~2024.4 <br>
   Supervisor: [Prof. Tong Zhang](https://www2.scut.edu.cn/cs/2021/0317/c22284a422099/page.htm) <br>
-  - Music Emotion Recognition
+  Topic: Music Emotion Recognition
   
