@@ -24,15 +24,15 @@ author:
   avatar           : "profile.png"
   name             : "Nanjun Zhou"
   pronouns         : # example: "she/her"  
-  bio              : "Keep going..."
-  location         : "Guangzhou, China"
+  bio              : # "Keep going..."
+  location         : "Hong Kong, China"
   employer         : "South China University of Technology"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "arbiter0102@gmail.com" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : # "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=gtmR4jkAAAAJ&hl=en&oi=ao"
   impactstory      : # URL
   orcid            : # "http://orcid.org/yourorcidurl"
   semantic         : # URL
@@ -57,7 +57,7 @@ author:
   keybase          : # Username
   instagram        : cokewrld8
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : Nanjun Zhou
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -71,7 +71,7 @@ author:
   wikipedia        : # Username
   xing             : # Username
   youtube          : # Username
-  zhihu            : https://www.zhihu.com/people/arbiter-75-87
+  zhihu            : # https://www.zhihu.com/people/arbiter-75-87
 
 
 # Site Settings
