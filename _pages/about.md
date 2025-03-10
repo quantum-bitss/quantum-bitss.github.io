@@ -12,14 +12,14 @@ Hi! I'm a final year undergraduate student from [Department of CSE](https://www2
 My current research interest focuses on **Trustworthy Machine Learning**, particularly on **Backdoor Learning**. I'm interested in security issues across all domains of AI, including Computer Vision, Audio & Signal Processing and Large Language Models. 
 
 # 🔥News
-======
+
 - [2025.02] Our latest work [BackdoorDM](https://arxiv.org/abs/2502.11798) on Diffusion Backdoor has been released on ArXiv. Our code is available at [GitHub](https://github.com/linweiii/BackdoorDM).
 - [2024.12] My first acdemic paper on audio backdoor defense was accepted by [ICASSP 2025](https://2025.ieeeicassp.org/). Thanks to the support of my co-authors and Prof. Liu!
 - [2024.12] I completed my Software Development Intern at ZTE Corporation. Thanks to all my mentors and co-workers!
 - [2024.09] I joined the Data Mangement Group at ZTE Corporation as a Software Development Engineer, focusing on AI for Data.
 
 # 📑Research
-======
+
 - [BackdoorDM: A Comprehensive Benchmark for Backdoor Learnin in Diffusion Model](https://arxiv.org/abs/2502.11798) <br>
   Weilin Lin, **Nanjun Zhou**, Yanyun Wang, Jianze Li, Hui Xiong, Li Liu<sup>#</sup> <br>
   arXiv Preprint 2025
