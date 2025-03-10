@@ -9,7 +9,7 @@ redirect_from:
 
 Hi! I'm a final year undergraduate student from [Department of CSE](https://www2.scut.edu.cn/cs/), [South China University of Technology](https://www.scut.edu.cn/new/), majoring in Computer Science and Technology (Elite Class). I am very fortunate be supervised by [Prof. Li Liu](https://liliu-avril.github.io/) from [AI Thrust](https://ait.hkust-gz.edu.cn/), HKUST (Guangzhou) and [Prof. Tong Zhang](https://www2.scut.edu.cn/cs/2021/0317/c22284a422099/page.htm) from [DSAIL](http://www.dsail.vip/), South China University of Technology.
 
-My current research interest focuses on **Trustworthy Machine Learning**, particularly on **Backdoor Learning**. I'm interested in security issues across all domains of AI, such as Computer Vision, Audio Signal Processing and Large Language Models. 
+My current research interest focuses on **Trustworthy Machine Learning**, particularly on **Backdoor Learning**. I'm interested in security issues across all domains of AI, including Computer Vision, Audio & Signal Processing and Large Language Models. 
 
 🔥News
 ======
