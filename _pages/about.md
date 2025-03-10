@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I'm a final year undergraduate student from [Department of CSE](https://www2.scut.edu.cn/cs/), [South China University of Technology](https://www.scut.edu.cn/new/), majoring in Computer Science and Technology (Elite Class). I am very fortunate be supervised by [Prof. Li Liu](https://liliu-avril.github.io/) from [AI Thrust](https://ait.hkust-gz.edu.cn/), HKUST (Guangzhou) and [Prof. Tong Zhang](https://www2.scut.edu.cn/cs/2021/0317/c22284a422099/page.htm) from [DSAIL](http://www.dsail.vip/), South China University of Technology.
+Hi! I'm a final year undergraduate student from [Department of CSE](https://www2.scut.edu.cn/cs/), [South China University of Technology](https://www.scut.edu.cn/new/), majoring in Computer Science and Technology (Elite Class). I am very fortunate be supervised by [Prof. Li Liu](https://liliu-avril.github.io/) from [AI Thrust](https://ait.hkust-gz.edu.cn/), HKUST (Guangzhou) and [Prof. Tong Zhang](http://dsail.vip/TeamMember.html) from [DSAIL](http://www.dsail.vip/), South China University of Technology.
 
 My current research interest focuses on **Trustworthy Machine Learning**, particularly on **Backdoor Learning**. I'm interested in security issues across all domains of AI, including Computer Vision, Audio & Signal Processing and Large Language Models. 
 
@@ -47,7 +47,7 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
   </p>
 - **ZTE Corporation**, Shenzhen, China <br>
   Software Development Engineer, Data Management Group, 2024.9~2024.12 <br>
-  Topic: AI for Data, NL2SQL
+  Topic: AI for Data, NL2SQL, Backend Development
 
   <p>
     <img src="images/chinatelecom.png" alt="ChinaTelecom" style="float: right; margin-right: 20px;; width: 70px; height: 70px;">
@@ -61,7 +61,7 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
   </p>
 - **South China University of Technology**, Guangzhou, China <br>
   Student Researcher, [DSAIL](http://www.dsail.vip/), 2023.3~2024.4 <br>
-  Supervisor: [Prof. Tong Zhang](https://www2.scut.edu.cn/cs/2021/0317/c22284a422099/page.htm) <br>
+  Supervisor: [Prof. Tong Zhang](http://dsail.vip/TeamMember.html) <br>
   Topic: Music Emotion Recognition
   
 # 🏆 Honors & Awards
