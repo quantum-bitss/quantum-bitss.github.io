@@ -20,15 +20,15 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
 
 📑Research
 ======
-- [BackdoorDM: A Comprehensive Benchmark for Backdoor Learnin in Diffusion Model](https://arxiv.org/abs/2502.11798)
+- [BackdoorDM: A Comprehensive Benchmark for Backdoor Learnin in Diffusion Model](https://arxiv.org/abs/2502.11798) <br>
   Weilin Lin, **Nanjun Zhou**, Yanyun Wang, Jianze Li, Hui Xiong, Li Liu<sup>#</sup>, in *arXiv Preprint 2025*
 
-- [Gradient Norm-based Fine-Tuning for Backdoor Defense in Automatic Speech Recognition](https://arxiv.org/abs/2502.01152)
+- [Gradient Norm-based Fine-Tuning for Backdoor Defense in Automatic Speech Recognition](https://arxiv.org/abs/2502.01152) <br>
   **Nanjun Zhou<sup>*</sup>**, Weilin Lin<sup>*</sup>, Li Liu<sup>#</sup>, in *2025 IEEE International Conference on Acoustics, Speech and Signal Processing*
 
 # ✏️Education
 
-- **South China University of Technology**, Guangzhou, China
+- **South China University of Technology**, Guangzhou, China <br>
   B.Eng in Computer Science & Technology (Elite Class), 2021-2025
 
 # 💻 Experience
