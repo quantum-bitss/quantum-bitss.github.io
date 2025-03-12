@@ -28,6 +28,8 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
   **Nanjun Zhou<sup>*</sup>**, Weilin Lin<sup>*</sup>, Li Liu<sup>#</sup> <br>
   2025 IEEE International Conference on Acoustics, Speech and Signal Processing
 
+(<sup>*</sup> indicates authors of equal contribution, <sup>#</sup> indicates corresponding author)
+
 # ✏️Education
 
 - **South China University of Technology**, Guangzhou, China <br>
