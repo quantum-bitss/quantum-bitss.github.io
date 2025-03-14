@@ -34,6 +34,9 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
 
 - **South China University of Technology**, Guangzhou, China <br>
   B.Eng in Computer Science & Technology (Elite Class), 2021-2025
+  
+- **Nanjing Jinling High School**, Nanjing, China <br>
+  High School Diploma, 2018-2021  
 
 # 💻 Experience
   <p>
