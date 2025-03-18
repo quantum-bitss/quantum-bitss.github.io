@@ -24,7 +24,7 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
   Weilin Lin, **Nanjun Zhou**, Yanyun Wang, Jianze Li, Hui Xiong, Li Liu<sup>#</sup> <br>
   arXiv Preprint 2025
 
-- [**Gradient Norm-based Fine-Tuning for Backdoor Defense in Automatic Speech Recognition**](https://arxiv.org/abs/2502.01152) <br>
+- [**Gradient Norm-based Fine-Tuning for Backdoor Defense in Automatic Speech Recognition**](https://ieeexplore.ieee.org/document/10889177) <br>
   **Nanjun Zhou<sup>*</sup>**, Weilin Lin<sup>*</sup>, Li Liu<sup>#</sup> <br>
   2025 IEEE International Conference on Acoustics, Speech and Signal Processing
 
