@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Nanjun Zhou/Personal Homepage"
+title                    : "Nanjun Zhou's Homepage"
 title_separator          : "-"
 name                     : &name "Nanjun Zhou"
 description              : &description "a CS student from SCUT"
@@ -25,8 +25,8 @@ author:
   name             : "Nanjun Zhou"
   pronouns         : # example: "she/her"  
   bio              : # "Keep going..."
-  location         : "Hong Kong, China"
-  employer         : "South China University of Technology"
+  location         : "Guangzhou, China"
+  employer         : "SCUT"
   uri              : # URL
   email            : "arbiter0102@gmail.com" 
 
