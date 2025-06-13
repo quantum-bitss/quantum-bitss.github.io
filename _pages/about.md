@@ -13,9 +13,9 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
 
 # 🔥 News
 
-- [2025.05] 🎉 Just finished my bachelor thesis defense!
+- [2025.05] 🎉🎉 Successfully passed my bachelor thesis defense!
 - [2025.02] Our latest work [BackdoorDM](https://arxiv.org/abs/2502.11798) on Diffusion Backdoor has been released on ArXiv. Our code is available [here](https://github.com/linweiii/BackdoorDM).
-- [2024.12] 🎉 My first academic paper on audio backdoor defense was accepted by [ICASSP 2025](https://2025.ieeeicassp.org/). Thanks to the support of Weilin and Prof. Liu!
+- [2024.12] 🎉🎉 My first academic paper on audio backdoor defense was accepted by [ICASSP 2025](https://2025.ieeeicassp.org/). Thanks to the support of Weilin and Prof. Liu!
 - [2024.12] I completed my Software Development Internship at ZTE Corporation. Thanks to all my mentors and co-workers!
 - [2024.09] I joined the Data Mangement Group at ZTE Corporation as a Software Development Engineer, focusing on the development of a Data Agent.
 
@@ -45,7 +45,7 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
   </p>
 - **HKUST (Guangzhou)**, Guangzhou, China <br>
   Research Assistant, [AI Thrust](https://ait.hkust-gz.edu.cn/), 2024.1~Present <br>
-  Supervisor: Prof. [Li Liu](https://liliu-avril.github.io/) <br>
+  Supervisor: [Prof. Li Liu](https://liliu-avril.github.io/) <br>
   Topic: Backdoor Learning, Audio Security
 
   <p>
