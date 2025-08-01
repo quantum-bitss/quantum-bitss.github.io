@@ -33,7 +33,7 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
 
 # ✏️ Education
 
-- **The Hong Kong Uiversity of Science and Technology**, Hong Kong, China <br>
+- **The Hong Kong University of Science and Technology**, Hong Kong, China <br>
   M.Sc in Information Technology, 2025-2026
 
 - **South China University of Technology**, Guangzhou, China <br>
