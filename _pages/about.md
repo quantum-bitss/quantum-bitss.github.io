@@ -7,13 +7,13 @@ redirect_from:
   - /about.html
 ---
 
-Hi! My name is Nanjun Zhou. I'm a final year undergraduate student from [School of Computer Science & Engineering](https://www2.scut.edu.cn/cs/), [South China University of Technology](https://www.scut.edu.cn/new/), majoring in Computer Science. I am honored to be supervised by [Prof. Li Liu](https://liliu-avril.github.io/) from [AI Thrust](https://ait.hkust-gz.edu.cn/), HKUST (Guangzhou) and [Prof. Tong Zhang](http://dsail.vip/TeamMember.html) from [DSAIL](http://www.dsail.vip/), South China University of Technology. I'm about to join HKUST as a Master student in fall 2025.
+Hi! My name is Nanjun Zhou. I'm a mater student from [The Hong Kong University of Science and Technolohy](https://hkust.edu.hk/). Previously, I earned my bachelor degree from [School of Computer Science & Engineering](https://www2.scut.edu.cn/cs/), [South China University of Technology](https://www.scut.edu.cn/new/), majoring in Computer Science. I was honored to be supervised by [Prof. Li Liu](https://liliu-avril.github.io/) from [AI Thrust](https://ait.hkust-gz.edu.cn/), HKUST (Guangzhou) and [Prof. Tong Zhang](http://dsail.vip/TeamMember.html) from [DSAIL](http://www.dsail.vip/), South China University of Technology. 
 
 My current research interest focuses on **Trustworthy Machine Learning**, particularly on **Backdoor Learning**. I'm interested in security issues across all domains of AI, including **LLM agent**, Audio and Computer Vision. 
 
 # 🔥 News
 
-- [2025.07] 🎉🎉 I graduate from SCUT.
+- [2025.07] 🎉🎉 I graduate from SCUT!
 - [2025.02] Our latest work [BackdoorDM](https://arxiv.org/abs/2502.11798) on Diffusion Backdoor has been released on ArXiv. Our code is available [here](https://github.com/linweiii/BackdoorDM).
 - [2024.12] 🎉🎉 My first academic paper on audio backdoor defense was accepted by [ICASSP 2025](https://2025.ieeeicassp.org/). Thanks to the support of Weilin and Prof. Liu!
 - [2024.12] I completed my Software Development Internship at ZTE Corporation. Thanks to all my mentors and co-workers!
@@ -75,7 +75,7 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
   Topic: Music Emotion Recognition
   
 # 🏆 Honors & Awards
-- Excellent bachelor thesis, 2025
+- Excellent Bachelor Thesis, 2025
 - The Second-Class University Scholarship, 2024
 - MathorCup Mathematical Contest in Modeling: Third Prize, 2023
 - Asia and Pacific Mathematical Contest in Modeling (APMCM): Third Prize, 2022
