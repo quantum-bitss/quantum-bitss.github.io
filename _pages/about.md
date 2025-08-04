@@ -31,7 +31,7 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
 
 (<sup>*</sup> authors of equal contribution, <sup>#</sup> correspondence author)
 
-# ✏️ Education
+# 🎓 Education
 
 - **The Hong Kong University of Science and Technology**, Hong Kong, China <br>
   M.Sc in Information Technology, 2025-Present
@@ -45,7 +45,7 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
     <img src="images/hkust.png" alt="HKUST" style="float: right; margin-right: 20px;; width: 60px; height: 80px;">
   </p>
 - **HKUST (Guangzhou)**, Guangzhou, China <br>
-  Research Assistant, [AI Thrust](https://ait.hkust-gz.edu.cn/), 2024.1~Present <br>
+  Research Assistant, [AI Thrust](https://ait.hkust-gz.edu.cn/), 2024.1~2025.7 <br>
   Supervisor: [Prof. Li Liu](https://liliu-avril.github.io/) <br>
   Topic: Backdoor Learning, Audio Security
 
