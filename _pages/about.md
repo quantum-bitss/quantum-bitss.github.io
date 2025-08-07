@@ -54,14 +54,14 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
   </p>
 - **ZTE Corporation**, Shenzhen, China <br>
   Software Development Engineer, Data Management Group, 2024.9~2024.12 <br>
-  Topic: AI for Data, NL2SQL, Backend Development
+  Topic: Agent Development, NL2SQL
 
   <p>
     <img src="images/chinatelecom.png" alt="ChinaTelecom" style="float: right; margin-right: 20px;; width: 70px; height: 70px;">
   </p>
 - **E-Surfing IoT, China Telecom**, Guangzhou, China <br>
   AI Application Research Intern, Department of Technology and Advancement, 2024.7~2024.9 <br>
-  Topic: LLM Deployment, RAG, Agent
+  Topic: Agent Development, LLM Deployment, RAG
 
   <p>
     <img src="images/scut.png" alt="SCUT" style="float: right; margin-right: 20px;; width: 70px; height: 70px;">
