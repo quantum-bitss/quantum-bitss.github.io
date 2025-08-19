@@ -47,7 +47,7 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
 - **Zhejiang University**, Hangzhou, China <br>
   Research Intern, [State Key Laboratory of Blockchain and Data Security](http://www.en.cs.zju.edu.cn/2024/0912/c55704a2961681/page.htm), 2025.8~Present <br>
   Supervisor: [Prof. Yiming Li](https://liyiming.tech/) <br>
-  Topic: Backdoor Learning, Audio Security
+  Topic: LLM Agent Security
 
   <p>
     <img src="images/hkust.png" alt="HKUST" style="float: right; margin-right: 20px;; width: 60px; height: 80px;">
