@@ -42,7 +42,7 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
 
 # 💻 Experience
   <p>
-    <img src="images/zju.png" alt="ZJU" style="float: right; margin-right: 20px;; width: 60px; height: 80px;">
+    <img src="images/zju.png" alt="ZJU" style="float: right; margin-right: 20px;; width: 70px; height: 70px;">
   </p>
 - **Zhejiang University**, Hangzhou, China <br>
   Research Intern, [State Key Laboratory of Blockchain and Data Security](http://www.en.cs.zju.edu.cn/2024/0912/c55704a2961681/page.htm), 2025.8~Present <br>
