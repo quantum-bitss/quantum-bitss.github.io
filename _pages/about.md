@@ -23,11 +23,11 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
 
 # 📑 Research
 
-- **BackdoorDM: A Comprehensive Benchmark for Backdoor Learning in Diffusion Model** [pdf](https://arxiv.org/abs/2502.11798) [code](https://github.com/linweiii/BackdoorDM)<br>
+- **BackdoorDM: A Comprehensive Benchmark for Backdoor Learning in Diffusion Model** [[pdf](https://arxiv.org/abs/2502.11798), [code](https://github.com/linweiii/BackdoorDM)]<br>
   Weilin Lin<sup>*</sup>, **Nanjun Zhou<sup>*</sup>**, Yanyun Wang, Jianze Li, Hui Xiong, Li Liu<sup>#</sup> <br>
   NeurIPS 2025
 
-- **Gradient Norm-based Fine-Tuning for Backdoor Defense in Automatic Speech Recognition** [pdf](https://ieeexplore.ieee.org/document/10889177) <br>
+- **Gradient Norm-based Fine-Tuning for Backdoor Defense in Automatic Speech Recognition** [[pdf](https://ieeexplore.ieee.org/document/10889177)] <br>
   **Nanjun Zhou<sup>*</sup>**, Weilin Lin<sup>*</sup>, Li Liu<sup>#</sup> <br>
   ICASSP 2025
 
