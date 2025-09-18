@@ -17,14 +17,14 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
 - [2025.08] I join Responsible AI group, ZJU as a research intern, focusing on Agent Security.
 - [2025.07] 🎉🎉 I graduate from SCUT!
 - [2025.02] Our latest work [BackdoorDM](https://arxiv.org/abs/2502.11798) on Diffusion Backdoor has been released on ArXiv. Our code is available [here](https://github.com/linweiii/BackdoorDM).
-- [2024.12] 🎉🎉 My first academic paper on audio backdoor defense was accepted by [ICASSP 2025](https://2025.ieeeicassp.org/). Thanks to the support of Weilin and Prof. Liu!
+- [2024.12] 🎉🎉 My first academic work on audio backdoor defense was accepted by [ICASSP 2025](https://2025.ieeeicassp.org/). Thanks to the support of Weilin and Prof. Liu!
 - [2024.12] I complete my Software Development Internship at ZTE Corporation. Thanks to all my mentors and co-workers!
 - [2024.09] I join the Data Mangement Group at ZTE Corporation as a Software Development Engineer, focusing on the development of a Data Agent.
 
 # 📑 Research
 
 - **BackdoorDM: A Comprehensive Benchmark for Backdoor Learning in Diffusion Model** [pdf](https://arxiv.org/abs/2502.11798) [code](https://github.com/linweiii/BackdoorDM)<br>
-  Weilin Lin, **Nanjun Zhou**, Yanyun Wang, Jianze Li, Hui Xiong, Li Liu<sup>#</sup> <br>
+  Weilin Lin<sup>*</sup>, **Nanjun Zhou<sup>*</sup>**, Yanyun Wang, Jianze Li, Hui Xiong, Li Liu<sup>#</sup> <br>
   NeurIPS 2025
 
 - **Gradient Norm-based Fine-Tuning for Backdoor Defense in Automatic Speech Recognition** [pdf](https://ieeexplore.ieee.org/document/10889177) <br>
