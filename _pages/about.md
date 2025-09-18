@@ -7,15 +7,15 @@ redirect_from:
   - /about.html
 ---
 
-Hi! My name is Nanjun Zhou. I'm a master student from [CSE](https://cse.hkust.edu.hk/), [The Hong Kong University of Science and Technology](https://hkust.edu.hk/). Previously, I earned my bachelor degree from [School of Computer Science & Engineering](https://www2.scut.edu.cn/cs/), [South China University of Technology](https://www.scut.edu.cn/new/), majoring in Computer Science. I was honored to be supervised by [Prof. Li Liu](https://liliu-avril.github.io/) from [AI Thrust](https://ait.hkust-gz.edu.cn/), HKUST (Guangzhou) and [Prof. Tong Zhang](http://dsail.vip/TeamMember.html) from [DSAIL](http://www.dsail.vip/), South China University of Technology during my bachelor study. 
+Hi! My name is Nanjun Zhou. I'm a master student from [The Hong Kong University of Science and Technology](https://hkust.edu.hk/). Previously, I earned my bachelor degree from [School of Computer Science & Engineering](https://www2.scut.edu.cn/cs/), [South China University of Technology](https://www.scut.edu.cn/new/), majoring in Computer Science. I was honored to be supervised by [Prof. Li Liu](https://liliu-avril.github.io/) from [AI Thrust](https://ait.hkust-gz.edu.cn/), HKUST (Guangzhou) and [Prof. Tong Zhang](http://dsail.vip/TeamMember.html) from [DSAIL](http://www.dsail.vip/), South China University of Technology during my bachelor study. 
 
 My current research interest focuses on **Trustworthy Machine Learning**, particularly on **Backdoor Learning**. I'm interested in security issues across all domains of AI, including **LLM agent**, Diffusion Model, Audio and Computer Vision. 
 
 # 🔥 News
 
 - [2025.09] 🚀🚀 BackdoorDM is accepted by [NeurIPS 2025](https://neurips.cc/Conferences/2025/CallForDatasetsBenchmarks)! 
-- [2025.08] I join Responsible AI group, ZJU as a research intern, focusing on Agent Security.
-- [2025.07] 🎉🎉 I graduate from SCUT!
+- [2025.08] I officially join Responsible AI group, ZJU as a research intern, focusing on Agent Security.
+- [2025.07] 🎓📜 I graduate from SCUT.
 - [2025.02] Our latest work [BackdoorDM](https://arxiv.org/abs/2502.11798) on Diffusion Backdoor has been released on ArXiv. Our code is available [here](https://github.com/linweiii/BackdoorDM).
 - [2024.12] 🎉🎉 My first academic work on audio backdoor defense was accepted by [ICASSP 2025](https://2025.ieeeicassp.org/). Thanks to the support of Weilin and Prof. Liu!
 - [2024.12] I complete my Software Development Internship at ZTE Corporation. Thanks to all my mentors and co-workers!
@@ -36,10 +36,10 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
 # 🎓 Education
 
 - **The Hong Kong University of Science and Technology**, Hong Kong, China <br>
-  M.S. in Information Technology, 2025-Present
+  MS in Information Technology, 2025-Present
 
 - **South China University of Technology**, Guangzhou, China <br>
-  B.E. in Computer Science & Technology (Elite Class), 2021-2025 <br>
+  BE in Computer Science & Technology (Elite Class), 2021-2025 <br>
   GPA: 3.8/4.0 
 
 # 💻 Experience
