@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi! My name is Nanjun Zhou. I'm a graduate student from [CSE](https://cse.hkust.edu.hk/), [The Hong Kong University of Science and Technology](https://hkust.edu.hk/). Previously, I earned my bachelor degree from [School of Computer Science & Engineering](https://www2.scut.edu.cn/cs/), [South China University of Technology](https://www.scut.edu.cn/new/), majoring in Computer Science. I was honored to be supervised by [Prof. Li Liu](https://liliu-avril.github.io/) from [AI Thrust](https://ait.hkust-gz.edu.cn/), HKUST (Guangzhou) and [Prof. Tong Zhang](http://dsail.vip/TeamMember.html) from [DSAIL](http://www.dsail.vip/), South China University of Technology during my bachelor study. 
+Hi! My name is Nanjun Zhou. I'm a master student from [CSE](https://cse.hkust.edu.hk/), [The Hong Kong University of Science and Technology](https://hkust.edu.hk/). Previously, I earned my bachelor degree from [School of Computer Science & Engineering](https://www2.scut.edu.cn/cs/), [South China University of Technology](https://www.scut.edu.cn/new/), majoring in Computer Science. I was honored to be supervised by [Prof. Li Liu](https://liliu-avril.github.io/) from [AI Thrust](https://ait.hkust-gz.edu.cn/), HKUST (Guangzhou) and [Prof. Tong Zhang](http://dsail.vip/TeamMember.html) from [DSAIL](http://www.dsail.vip/), South China University of Technology during my bachelor study. 
 
 My current research interest focuses on **Trustworthy Machine Learning**, particularly on **Backdoor Learning**. I'm interested in security issues across all domains of AI, including **LLM agent**, Diffusion Model, Audio and Computer Vision. 
 
@@ -23,11 +23,11 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
 
 # 📑 Research
 
-- [**BackdoorDM: A Comprehensive Benchmark for Backdoor Learning in Diffusion Model**](https://arxiv.org/abs/2502.11798) <br>
+- **BackdoorDM: A Comprehensive Benchmark for Backdoor Learning in Diffusion Model** [pdf](https://arxiv.org/abs/2502.11798) [code](https://github.com/linweiii/BackdoorDM)<br>
   Weilin Lin, **Nanjun Zhou**, Yanyun Wang, Jianze Li, Hui Xiong, Li Liu<sup>#</sup> <br>
   NeurIPS 2025
 
-- [**Gradient Norm-based Fine-Tuning for Backdoor Defense in Automatic Speech Recognition**](https://ieeexplore.ieee.org/document/10889177) <br>
+- **Gradient Norm-based Fine-Tuning for Backdoor Defense in Automatic Speech Recognition** [pdf](https://ieeexplore.ieee.org/document/10889177) <br>
   **Nanjun Zhou<sup>*</sup>**, Weilin Lin<sup>*</sup>, Li Liu<sup>#</sup> <br>
   ICASSP 2025
 
