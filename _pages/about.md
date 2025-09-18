@@ -13,6 +13,7 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
 
 # 🔥 News
 
+- [2025.09] 🚀🚀 BackdoorDM is accepted by [NeurIPS 2025](https://neurips.cc/Conferences/2025/CallForDatasetsBenchmarks)! 
 - [2025.08] I join Responsible AI group, ZJU as a research intern, focusing on Agent Security.
 - [2025.07] 🎉🎉 I graduate from SCUT!
 - [2025.02] Our latest work [BackdoorDM](https://arxiv.org/abs/2502.11798) on Diffusion Backdoor has been released on ArXiv. Our code is available [here](https://github.com/linweiii/BackdoorDM).
@@ -24,7 +25,7 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
 
 - [**BackdoorDM: A Comprehensive Benchmark for Backdoor Learning in Diffusion Model**](https://arxiv.org/abs/2502.11798) <br>
   Weilin Lin, **Nanjun Zhou**, Yanyun Wang, Jianze Li, Hui Xiong, Li Liu<sup>#</sup> <br>
-  arXiv Preprint 2025
+  NeurIPS 2025
 
 - [**Gradient Norm-based Fine-Tuning for Backdoor Defense in Automatic Speech Recognition**](https://ieeexplore.ieee.org/document/10889177) <br>
   **Nanjun Zhou<sup>*</sup>**, Weilin Lin<sup>*</sup>, Li Liu<sup>#</sup> <br>
