@@ -9,7 +9,7 @@ redirect_from:
 
 Hi! My name is Nanjun Zhou. I'm a master student from [The Hong Kong University of Science and Technology](https://hkust.edu.hk/). I earned my bachelor degree from [School of Computer Science & Engineering](https://www2.scut.edu.cn/cs/), [South China University of Technology](https://www.scut.edu.cn/new/), majoring in Computer Science. I was honored to be supervised by Prof. [Li Liu](https://liliu-avril.github.io/) from [AI Thrust](https://ait.hkust-gz.edu.cn/), HKUST (Guangzhou) and Prof. [Tong Zhang](http://dsail.vip/TeamMember.html) from [DSAIL](http://www.dsail.vip/), SCUT during my bachelor study. 
 
-My research interest lies on **Trustworthy Machine Learning**, particularly on **Backdoor Learning**. Currently, I focus on the trustworthiness of **LLM agent**. I'm also interested in security issues in other domains of AI, including LLM, Diffusion Model, Audio and Computer Vision. 
+My research interest lies on **Trustworthy Machine Learning**, particularly on **Backdoor Learning**. Currently, I focus on the trustworthiness of **LLM agent**. I'm also interested in security issues in other domains of AI, including Diffusion Model, Audio and Computer Vision. 
 
 # 🔥 News
 <div style="max-height: 325px; overflow-y: auto;">
