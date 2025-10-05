@@ -7,14 +7,14 @@ redirect_from:
   - /about.html
 ---
 
-Hi! My name is Nanjun Zhou. I'm a master student from [The Hong Kong University of Science and Technology](https://hkust.edu.hk/). I earned my bachelor degree from [School of Computer Science & Engineering](https://www2.scut.edu.cn/cs/), [South China University of Technology](https://www.scut.edu.cn/new/), majoring in Computer Science. I was honored to be supervised by [Prof. Li Liu](https://liliu-avril.github.io/) from [AI Thrust](https://ait.hkust-gz.edu.cn/), HKUST (Guangzhou) and [Prof. Tong Zhang](http://dsail.vip/TeamMember.html) from [DSAIL](http://www.dsail.vip/), South China University of Technology during my bachelor study. 
+Hi! My name is Nanjun Zhou. I'm a master student from [The Hong Kong University of Science and Technology](https://hkust.edu.hk/). I earned my bachelor degree from [School of Computer Science & Engineering](https://www2.scut.edu.cn/cs/), [South China University of Technology](https://www.scut.edu.cn/new/), majoring in Computer Science. I was honored to be supervised by Prof. [Li Liu](https://liliu-avril.github.io/) from [AI Thrust](https://ait.hkust-gz.edu.cn/), HKUST (Guangzhou) and Prof. [Tong Zhang](http://dsail.vip/TeamMember.html) from [DSAIL](http://www.dsail.vip/), SCUT during my bachelor study. 
 
-My current research interest focuses on **Trustworthy Machine Learning**, particularly on **Backdoor Learning**. I'm interested in security issues across all domains of AI, including **LLM agent**, Diffusion Model, Audio and Computer Vision. 
+My research interest lies on **Trustworthy Machine Learning**, particularly on **Backdoor Learning**. Currently, I focus on the trustworthiness of **LLM agent**. I'm also interested in security issues in other domains of AI, including LLM, Diffusion Model, Audio and Computer Vision. 
 
 # 🔥 News
-<div style="max-height: 350px; overflow-y: auto;">
+<div style="max-height: 325px; overflow-y: auto;">
 <ul>
-<li>[2025.09] 🚀🚀 BackdoorDM is accepted by <a href="https://neurips.cc/Conferences/2025/CallForDatasetsBenchmarks">NeurIPS 2025</a>! </li>
+<li>[2025.09] 🚀🚀 BackdoorDM is accepted by <a href="https://neurips.cc/">NeurIPS 2025</a>!</li>
 <li>[2025.08] I officially join Responsible AI group, ZJU as a research intern, focusing on Agent Security.</li>
 <li>[2025.07] 🎓📜 I graduate from SCUT.</li>
 <li>[2025.02] Our latest work <a href="https://arxiv.org/abs/2502.11798">BackdoorDM</a> on Diffusion Backdoor has been released on ArXiv. Our code is available <a href="https://github.com/linweiii/BackdoorDM">here</a>.</li>
@@ -26,7 +26,7 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
 </div>
 
 
-# 📑 Research
+# 📑 Publications
 
 - **[BackdoorDM: A Comprehensive Benchmark for Backdoor Learning in Diffusion Model](https://arxiv.org/abs/2502.11798)** [[pdf](https://arxiv.org/abs/2502.11798), [code](https://github.com/linweiii/BackdoorDM)]<br>
   Weilin Lin<sup>*</sup>, **Nanjun Zhou<sup>*</sup>**, Yanyun Wang, Jianze Li, Hui Xiong, Li Liu<sup>#</sup> <br>
@@ -53,7 +53,7 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
   </p>
 - **Zhejiang University**, Hangzhou, China <br>
   Research Intern, [State Key Laboratory of Blockchain and Data Security](http://www.en.cs.zju.edu.cn/2024/0912/c55704a2961681/page.htm), 2025.8~Present <br>
-  Supervisor: [Prof. Yiming Li](https://liyiming.tech/) <br>
+  Supervisor: Prof. [Yiming Li](https://liyiming.tech/) <br>
   Topic: LLM Agent Security
 
   <p>
@@ -61,7 +61,7 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
   </p>
 - **HKUST (Guangzhou)**, Guangzhou, China <br>
   Research Assistant, [AI Thrust](https://ait.hkust-gz.edu.cn/), 2024.1~2025.7 <br>
-  Supervisor: [Prof. Li Liu](https://liliu-avril.github.io/) <br>
+  Supervisor: Prof. [Li Liu](https://liliu-avril.github.io/) <br>
   Topic: Backdoor Learning, Audio Security
 
   <p>
@@ -69,21 +69,21 @@ My current research interest focuses on **Trustworthy Machine Learning**, partic
   </p>
 - **ZTE Corporation**, Shenzhen, China <br>
   Software Development Engineer, Data Management Group, 2024.9~2024.12 <br>
-  Topic: Agent Development, NL2SQL
+  Topic: Agent Development
 
   <p>
     <img src="images/chinatelecom.png" alt="ChinaTelecom" style="float: right; margin-right: 20px;; width: 70px; height: 70px;">
   </p>
 - **E-Surfing IoT, China Telecom**, Guangzhou, China <br>
   AI Application Research Intern, Department of Technology and Advancement, 2024.7~2024.9 <br>
-  Topic: Agent Development, LLM Deployment, RAG
+  Topic: Agent Development
 
   <p>
     <img src="images/scut.png" alt="SCUT" style="float: right; margin-right: 20px;; width: 70px; height: 70px;">
   </p>
 - **South China University of Technology**, Guangzhou, China <br>
   Student Researcher, [DSAIL](http://www.dsail.vip/), 2023.3~2024.4 <br>
-  Supervisor: [Prof. Tong Zhang](http://dsail.vip/TeamMember.html) <br>
+  Supervisor: Prof. [Tong Zhang](http://dsail.vip/TeamMember.html) <br>
   Topic: Music Emotion Recognition
   
 # 🏆 Honors & Awards
