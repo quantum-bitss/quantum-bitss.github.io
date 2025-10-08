@@ -12,7 +12,7 @@ Hi! My name is Nanjun Zhou. I'm a master student from [The Hong Kong University 
 My research interest lies on **Trustworthy Machine Learning**, particularly on **Backdoor Learning**. Currently, I focus on the trustworthiness of **LLM agent**. I'm also interested in security issues in other domains of AI, including Diffusion Model, Audio and Computer Vision. 
 
 # 🔥 News
-<div style="max-height: 330px; overflow-y: auto;">
+<div style="max-height: 320px; overflow-y: auto;">
 <ul>
 <li>[2025.09] 🚀🚀 BackdoorDM is accepted by <a href="https://neurips.cc/">NeurIPS 2025</a>!</li>
 <li>[2025.08] I officially join Responsible AI group, ZJU as a research intern, focusing on Agent Security.</li>
