@@ -14,7 +14,7 @@ My research interest lies on **Trustworthy Machine Learning**, particularly on *
 # 🔥 News
 <div style="max-height: 310px; overflow-y: auto;">
 <ul>
-<li>[2025.12] 🏆🏆 BackdoorDM receives the Second-class Award in <a href="https://gdsig.cn/">The 15th Guangdong-Hong Kong-Macao Conference on Image and Graphics</a>.
+<li>[2025.12] 🚀🚀 BackdoorDM receives the Second-class Award in <a href="https://gdsig.cn/">The 15th Guangdong-Hong Kong-Macao Conference on Image and Graphics</a>.
 <li>[2025.09] 🚀🚀 BackdoorDM is accepted by <a href="https://neurips.cc/">NeurIPS 2025</a>!</li>
 <li>[2025.08] I officially join Responsible AI group, ZJU as a research intern, focusing on Agent Security.</li>
 <li>[2025.07] 🎓📜 I graduate from SCUT.</li>
