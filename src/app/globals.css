@@ -10,13 +10,13 @@
   --background: #fefffe;
   --foreground: #0f172a;
   
-  /* Brand colors - Deep Navy & Gold */
+  /* Brand colors - Deep Navy & Deep Blue */
   --primary: #1e293b;
   --primary-light: #334155;
   --primary-dark: #0f172a;
-  --accent: #d4a562;
-  --accent-light: #e4b976;
-  --accent-dark: #b8914d;
+  --accent: #1e40af;
+  --accent-light: #2563eb;
+  --accent-dark: #1e3a8a;
   
   /* Neutral colors */
   --neutral-50: #f8fafc;
@@ -137,9 +137,9 @@
   --primary: #f8fafc;
   --primary-light: #e2e8f0;
   --primary-dark: #cbd5e1;
-  --accent: #e4b976;
-  --accent-light: #f0c674;
-  --accent-dark: #d4a562;
+  --accent: #3b82f6;
+  --accent-light: #60a5fa;
+  --accent-dark: #2563eb;
   
   /* Dark mode glass effect */
   --glass-bg: rgba(15, 23, 42, 0.8);

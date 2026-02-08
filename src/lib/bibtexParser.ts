@@ -168,6 +168,7 @@ function parseAuthors(authorsStr: string, highlightName?: string): Array<{ name:
         isHighlighted,
         isCorresponding,
         isCoAuthor,
+        isCoFirst,
       };
     })
     .filter(author => author.name);
