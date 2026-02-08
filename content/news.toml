@@ -1,10 +1,10 @@
 [[news]]
 date = "2025-12"
-content = "🚀🚀 BackdoorDM receives the Second-class Award in [The 15th Guangdong-Hong Kong-Macao Conference on Image and Graphics](https://gdsig.cn/)"
+content = "🚀🚀 BackdoorDM receives the Second-class Award in The 15th Guangdong-Hong Kong-Macao Conference on Image and Graphics!"
 
 [[news]]
 date = "2025-09"
-content = "🚀🚀 BackdoorDM is accepted by [NeurIPS 2025](https://neurips.cc/)!"
+content = "🚀🚀 BackdoorDM is accepted by NeurIPS 2025!"
 
 [[news]]
 date = "2025-08"
@@ -16,5 +16,5 @@ content = "🎓📜 I graduate from SCUT."
 
 [[news]]
 date = "2025-02"
-content = "Our latest work [BackdoorDM](https://arxiv.org/abs/2502.11798) on Diffusion Backdoor has been released! Our code is available [here](https://github.com/linweiii/BackdoorDM)."
+content = "Our latest work BackdoorDM on Diffusion Backdoor is released!"
 
