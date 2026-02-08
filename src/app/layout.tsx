@@ -17,9 +17,7 @@ export async function generateMetadata(): Promise<Metadata> {
     authors: [{ name: config.author.name }],
     creator: config.author.name,
     publisher: config.author.name,
-    icons: {
-      icon: config.site.favicon,
-    },
+    // Favicon from app/icon.svg (Next.js file convention); config.site.favicon kept for reference
     openGraph: {
       type: "website",
       locale: "en_US",
@@ -46,7 +44,7 @@ export default function RootLayout({
             __html: `html{--accent:#1e40af;--accent-light:#2563eb;--accent-dark:#1e3a8a}html.dark{--accent:#3b82f6;--accent-light:#60a5fa;--accent-dark:#2563eb}`,
           }}
         />
-        <link rel="icon" href={config.site.favicon} type="image/svg+xml" />
+        {/* Favicon from app/icon.svg (Next.js file convention) */}
         {/* Speed up font connections */}
         <link rel="dns-prefetch" href="https://google-fonts.jialeliu.com" />
         <link rel="preconnect" href="https://google-fonts.jialeliu.com" crossOrigin="" />
