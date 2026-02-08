@@ -1,7 +1,20 @@
 [[news]]
-date = "2025-11"
-content = "Our work has been accepted by a prestigious journal 🎉"
+date = "2025-12"
+content = "🚀🚀 BackdoorDM receives the Second-class Award in [The 15th Guangdong-Hong Kong-Macao Conference on Image and Graphics](https://gdsig.cn/)"
 
 [[news]]
 date = "2025-09"
-content = "Starting my PhD at the University of Example"
+content = "🚀🚀 BackdoorDM is accepted by [NeurIPS 2025](https://neurips.cc/)!"
+
+[[news]]
+date = "2025-08"
+content = "I officially join Responsible AI group, ZJU as a research intern, focusing on Agent Security."
+
+[[news]]
+date = "2025-07"
+content = "🎓📜 I graduate from SCUT."
+
+[[news]]
+date = "2025-02"
+content = "Our latest work [BackdoorDM](https://arxiv.org/abs/2502.11798) on Diffusion Backdoor has been released! Our code is available [here](https://github.com/linweiii/BackdoorDM)."
+
