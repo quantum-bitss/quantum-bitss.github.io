@@ -40,6 +40,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
+        {/* Ensure accent (blue) persists on client-side navigation - single source of truth */}
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `html{--accent:#1e40af;--accent-light:#2563eb;--accent-dark:#1e3a8a}html.dark{--accent:#3b82f6;--accent-light:#60a5fa;--accent-dark:#2563eb}`,
+          }}
+        />
         <link rel="icon" href={config.site.favicon} type="image/svg+xml" />
         {/* Speed up font connections */}
         <link rel="dns-prefetch" href="https://google-fonts.jialeliu.com" />

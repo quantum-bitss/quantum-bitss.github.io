@@ -3,9 +3,11 @@
 /* Explicitly set dark mode to use class strategy */
 @variant dark (&:where(.dark, .dark *));
 
-/* Default to light theme colors - no system preference detection */
+/* Default to light theme colors - set on html so they persist on client-side navigation */
 :root,
-.light {
+html,
+.light,
+html.light {
   /* Light theme colors */
   --background: #fefffe;
   --foreground: #0f172a;
@@ -128,8 +130,9 @@
   --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
 }
 
-/* Dark mode styles */
-.dark {
+/* Dark mode styles - must override on html for client navigation */
+.dark,
+html.dark {
   --background: #0f172a;
   --foreground: #f8fafc;
   

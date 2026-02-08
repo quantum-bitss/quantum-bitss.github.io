@@ -42,8 +42,11 @@ export function parseBibTeX(bibtexContent: string): Publication[] {
   return entries.map((entry: { entryType: string; citationKey: string; entryTags: Record<string, string> }, index: number) => {
     const tags = entry.entryTags;
 
-    // Parse authors
-    const authors = parseAuthors(tags.author || '', authorName);
+    // Parse authors (^ in author string may be stripped by bibtex lib; cofirst field is fallback)
+    let authors = parseAuthors(tags.author || '', authorName);
+    if (tags.cofirst) {
+      authors = applyCoFirstFromField(authors, tags.cofirst);
+    }
 
     // Parse year and month
     const year = parseInt(tags.year) || new Date().getFullYear();
@@ -172,6 +175,29 @@ function parseAuthors(authorsStr: string, highlightName?: string): Array<{ name:
       };
     })
     .filter(author => author.name);
+}
+
+/** Parse cofirst = {Name1 and Name2} and set isCoFirst for matching authors (handles "Last, First" or "First Last") */
+function applyCoFirstFromField(
+  authors: Array<{ name: string; isHighlighted?: boolean; isCorresponding?: boolean; isCoAuthor?: boolean; isCoFirst?: boolean }>,
+  cofirstStr: string
+): Array<{ name: string; isHighlighted?: boolean; isCorresponding?: boolean; isCoAuthor?: boolean; isCoFirst?: boolean }> {
+  const namesRaw = cofirstStr.split(/\s+and\s+/).map(s => s.trim()).filter(Boolean);
+  const normalizedSet = new Set(
+    namesRaw.map(raw => {
+      let n = cleanBibTeXString(raw);
+      if (n.includes(',')) {
+        const parts = n.split(',').map(p => p.trim());
+        n = `${parts[1]} ${parts[0]}`.trim();
+      }
+      return n.toLowerCase();
+    })
+  );
+  return authors.map(a => {
+    const key = a.name.toLowerCase();
+    const isCoFirst = normalizedSet.has(key) || Array.from(normalizedSet).some(cf => key.includes(cf) || cf.includes(key));
+    return { ...a, isCoFirst: a.isCoFirst || isCoFirst };
+  });
 }
 
 function cleanBibTeXString(str?: string): string {
