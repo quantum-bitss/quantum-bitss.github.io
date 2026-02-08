@@ -29,7 +29,7 @@ export default function PublicationsList({ config, publications, embedded = fals
 
     // Extract unique years and types for filters
     const years = useMemo(() => {
-        const uniqueYears = Array.from(new Set(publications.map(p => p.year)));
+        const uniqueYears = Array.from(new Set(publications.map(p => p.year).filter((y): y is number => y != null)));
         return uniqueYears.sort((a, b) => b - a);
     }, [publications]);
 
@@ -47,7 +47,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                 pub.journal?.toLowerCase().includes(searchQuery.toLowerCase()) ||
                 pub.conference?.toLowerCase().includes(searchQuery.toLowerCase());
 
-            const matchesYear = selectedYear === 'all' || pub.year === selectedYear;
+            const matchesYear = selectedYear === 'all' || (pub.year != null && pub.year === selectedYear);
             const matchesType = selectedType === 'all' || pub.type === selectedType;
 
             return matchesSearch && matchesYear && matchesType;
@@ -229,7 +229,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                         ))}
                                     </p>
                                     <p className="text-sm font-medium text-neutral-800 dark:text-neutral-600 mb-3">
-                                        {pub.journal || pub.conference} {pub.year}
+                                        {pub.journal || pub.conference}{pub.year != null ? ` ${pub.year}` : ''}
                                     </p>
 
                                     {pub.description && (

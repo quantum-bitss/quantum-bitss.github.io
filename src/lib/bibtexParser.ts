@@ -48,8 +48,9 @@ export function parseBibTeX(bibtexContent: string): Publication[] {
       authors = applyCoFirstFromField(authors, tags.cofirst);
     }
 
-    // Parse year and month
-    const year = parseInt(tags.year) || new Date().getFullYear();
+    // Parse year and month (no default year when missing)
+    const year = tags.year ? parseInt(tags.year) : undefined;
+    const yearNum = year !== undefined && !Number.isNaN(year) ? year : undefined;
     const monthStr = tags.month?.toLowerCase() || '';
     const month = monthMapping[monthStr] || (parseInt(monthStr) || undefined);
 
@@ -70,7 +71,7 @@ export function parseBibTeX(bibtexContent: string): Publication[] {
       id: entry.citationKey || tags.id || `pub-${Date.now()}-${index}`,
       title: cleanBibTeXString(tags.title || 'Untitled'),
       authors,
-      year,
+      ...(yearNum !== undefined && { year: yearNum }),
       month: monthMapping[tags.month?.toLowerCase()] ? String(month) : tags.month,
       type,
       status: 'published',
@@ -104,8 +105,10 @@ export function parseBibTeX(bibtexContent: string): Publication[] {
 
     return publication;
   }).sort((a: Publication, b: Publication) => {
-    // Sort by year (descending), then by month if available
-    if (b.year !== a.year) return b.year - a.year;
+    // Sort by year (descending); entries without year go last
+    const yearA = a.year ?? 0;
+    const yearB = b.year ?? 0;
+    if (yearB !== yearA) return yearB - yearA;
 
     // For month comparison, treat missing months as January (1) to ensure they appear last within the year
     const monthA = typeof a.month === 'string' ?

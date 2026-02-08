@@ -21,7 +21,7 @@ export interface Publication {
   volume?: string;
   issue?: string;
   pages?: string;
-  year: number;
+  year?: number;
   month?: string;
   publishedDate?: string;
   doi?: string;
