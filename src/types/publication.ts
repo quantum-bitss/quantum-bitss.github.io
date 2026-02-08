@@ -7,6 +7,8 @@ export interface Author {
   isHighlighted?: boolean;
   isCorresponding?: boolean;
   isCoAuthor?: boolean;
+  /** 共同第一作者 */
+  isCoFirst?: boolean;
 }
 
 export interface Publication {

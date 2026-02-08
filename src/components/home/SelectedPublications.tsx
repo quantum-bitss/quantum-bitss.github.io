@@ -45,6 +45,9 @@ export default function SelectedPublications({ publications, title = 'Selected P
                                     <span className={`${author.isHighlighted ? 'font-semibold text-accent' : ''} ${author.isCoAuthor ? `underline underline-offset-4 ${author.isHighlighted ? 'decoration-accent' : 'decoration-neutral-400'}` : ''}`}>
                                         {author.name}
                                     </span>
+                                    {author.isCoFirst && (
+                                        <sup className={`ml-0.5 ${author.isHighlighted ? 'text-accent' : 'text-neutral-500 dark:text-neutral-400'}`} title="共同第一作者">*</sup>
+                                    )}
                                     {author.isCorresponding && (
                                         <sup className={`ml-0 ${author.isHighlighted ? 'text-accent' : 'text-neutral-600 dark:text-neutral-500'}`}>†</sup>
                                     )}
@@ -55,6 +58,30 @@ export default function SelectedPublications({ publications, title = 'Selected P
                         <p className="text-sm text-neutral-600 dark:text-neutral-500 mb-2">
                             {pub.journal || pub.conference}
                         </p>
+                        {(pub.arxivId || pub.url?.includes('arxiv.org') || pub.pdfUrl || pub.url) && (
+                            <div className="flex flex-wrap gap-2 mb-2">
+                                {(pub.arxivId || pub.url?.includes('arxiv.org')) && (
+                                    <a
+                                        href={pub.arxivId ? `https://arxiv.org/abs/${pub.arxivId}` : pub.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-xs font-medium text-accent hover:underline"
+                                    >
+                                        arXiv
+                                    </a>
+                                )}
+                                {(pub.pdfUrl || (pub.url && !pub.url.includes('arxiv.org'))) && (
+                                    <a
+                                        href={pub.pdfUrl || pub.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-xs font-medium text-accent hover:underline"
+                                    >
+                                        PDF
+                                    </a>
+                                )}
+                            </div>
+                        )}
                         {pub.description && (
                             <p className="text-sm text-neutral-500 dark:text-neutral-500 line-clamp-2">
                                 {pub.description}

@@ -84,13 +84,12 @@ export function parseBibTeX(bibtexContent: string): Publication[] {
       doi: tags.doi,
       url: tags.url,
       code: tags.code,
+      pdfUrl: tags.pdf || tags.pdfurl,
+      arxivId: tags.arxiv || (String(tags.archiveprefix || tags.archivePrefix || '').toLowerCase() === 'arxiv' ? tags.eprint : undefined),
       abstract: cleanBibTeXString(tags.abstract),
       description: cleanBibTeXString(tags.description || tags.note),
       selected,
       preview,
-
-      // Store original BibTeX (excluding custom fields)
-      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code']),
     };
 
     // Clean up undefined fields
@@ -118,7 +117,7 @@ export function parseBibTeX(bibtexContent: string): Publication[] {
   });
 }
 
-function parseAuthors(authorsStr: string, highlightName?: string): Array<{ name: string; isHighlighted?: boolean; isCorresponding?: boolean; isCoAuthor?: boolean }> {
+function parseAuthors(authorsStr: string, highlightName?: string): Array<{ name: string; isHighlighted?: boolean; isCorresponding?: boolean; isCoAuthor?: boolean; isCoFirst?: boolean }> {
   if (!authorsStr) return [];
 
   // Split by "and" and clean up
@@ -128,14 +127,17 @@ function parseAuthors(authorsStr: string, highlightName?: string): Array<{ name:
       // Clean up the author name
       let name = author.trim();
 
-      // Check for corresponding author marker
+      // Check for corresponding author marker (*)
       const isCorresponding = name.includes('*');
 
       // Check for co-author marker (#)
       const isCoAuthor = name.includes('#');
 
+      // Check for co-first author marker (^)
+      const isCoFirst = name.includes('^');
+
       // Remove special markers from name
-      name = name.replace(/[*#]/g, '');
+      name = name.replace(/[*#^]/g, '');
 
       // Handle "Last, First" format
       if (name.includes(',')) {
