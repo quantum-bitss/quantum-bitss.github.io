@@ -8,43 +8,33 @@
 
 ## Experience
 
-<p>
-    <img src="images/zju.png" alt="ZJU" style="float: right; margin-right: 20px;; width: 75px; height: 75px;">
-  </p>
-- **Zhejiang University**, Hangzhou, China <br>
-  Research Intern, [State Key Laboratory of Blockchain and Data Security](http://www.en.cs.zju.edu.cn/2024/0912/c55704a2961681/page.htm), 2025.8~Present <br>
-  Supervisor: Prof. [Yiming Li](https://liyiming.tech/) <br>
-  Topic: LLM Agent Security
+**Research Intern**
+[State Key Laboratory of Blockchain and Data Security](http://www.en.cs.zju.edu.cn/2024/0912/c55704a2961681/page.htm), Zhejiang University
+*2025.8 - Present*
+- Supervisor: Prof. [Yiming Li](https://liyiming.tech/)
+- Research Topic: LLM Agent Security
 
-  <p>
-    <img src="images/hkust.png" alt="HKUST" style="float: right; margin-right: 20px;; width: 60px; height: 80px;">
-  </p>
-- **HKUST (Guangzhou)**, Guangzhou, China <br>
-  Research Assistant, [AI Thrust](https://ait.hkust-gz.edu.cn/), 2024.1~2025.7 <br>
-  Supervisor: Prof. [Li Liu](https://liliu-avril.github.io/) <br>
-  Topic: Backdoor Learning, Audio Security
+**Research Assistant**
+[AI Thrust](https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/information-hub/artificial-intelligence/), HKUST (Guangzhou)
+*2024.1 - 2025.7*
+- Supervisor: Prof. [Liu Li](https://liliu-avril.github.io/)
+- Research Topic: Backdoor Learning, Audio Security
 
-  <p>
-    <img src="images/zte.png" alt="ZTE" style="float: right; margin-right: 20px;; width: 70px; height: 70px;">
-  </p>
-- **ZTE Corporation**, Shenzhen, China <br>
-  Software Development Engineer, Data Management Group, 2024.9~2024.12 <br>
-  Topic: Agent Development
+**Software Development Engineer**
+ZTE Corporation, Shenzhen, China
+*2024.9 - 2024.12*
+- Topic: Agent Development
 
-  <p>
-    <img src="images/chinatelecom.png" alt="ChinaTelecom" style="float: right; margin-right: 20px;; width: 70px; height: 70px;">
-  </p>
-- **E-Surfing IoT, China Telecom**, Guangzhou, China <br>
-  AI Application Research Intern, Department of Technology and Advancement, 2024.7~2024.9 <br>
-  Topic: Agent Development
+**AI Application Reseach Intern**
+E-Surfing IoT, China Telecom, Guangzhou, China
+*2024.7 - 2024.9*
+- Topic: Agent Development
 
-  <p>
-    <img src="images/scut.png" alt="SCUT" style="float: right; margin-right: 20px;; width: 70px; height: 70px;">
-  </p>
-- **South China University of Technology**, Guangzhou, China <br>
-  Student Researcher, [DSAIL](http://www.dsail.vip/), 2023.3~2024.4 <br>
-  Supervisor: Prof. [Tong Zhang](http://dsail.vip/TeamMember.html) <br>
-  Topic: Music Emotion Recognition
+**Student Researcher**
+[DSAIL](http://www.dsail.vip/), South China University of Technology
+*2023.3 - 2024.4*
+- Supervisor: Prof. [Tong Zhang](http://dsail.vip/TeamMember.html)
+- Research Topic: Music Emotion Recognition
 
 ## Skills
 
