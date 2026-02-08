@@ -27,10 +27,14 @@ jobs:
           cache: "npm"
 
       - name: Install
-        run: npm ci
+        run: npm install --legacy-peer-deps
 
       - name: Build
         run: npm run build
+
+      # 避免 GitHub Pages 用 Jekyll 处理，忽略 _next 等目录
+      - name: Add .nojekyll
+        run: touch out/.nojekyll
 
       # Next.js output: 'export' 生成到 out 目录
       - name: Upload artifact
