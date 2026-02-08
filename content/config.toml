@@ -1,29 +1,29 @@
 [site]
-title = "Jiale Liu"
-description = "PhD student at the University of Example."
+title = "Nanjun Zhou"
+description = "Master student at HKUST"
 favicon = "/favicon.svg"
 last_updated = "November 18, 2025"
 
 [author]
-name = "Jiale Liu"
-title = "PhD Student"
-institution = "University of Example"
+name = "Nanjun Zhou"
+title = "Master Student"
+institution = "HKUST"
 avatar = "/bio.jpg"
 
 [social]
 # Contact information (leave blank or delete to hide)
 
-email = "john.doe@example.com"
-location = "City, Country"
+email = "arbiter0102@gmail.com"
+location = "Hong Kong"
 location_url = "https://maps.google.com"
 location_details = [
-  "Room 123, Science Building,",
-  "University Avenue, City, Country"
+  "3/F Annex, The Hong Kong University of Science and Technology",
+  "Clear Water Bay, Kowloon, Hong Kong"
 ]
-google_scholar = "https://scholar.google.com"
-orcid = "https://orcid.org"
-github = "https://github.com"
-linkedin = "https://linkedin.com"
+google_scholar = "https://scholar.google.com/citations?user=gtmR4jkAAAAJ&hl=en"
+# orcid = "https://orcid.org"
+github = "https://github.com/quantum-bitss"
+linkedin = "https://www.linkedin.com/in/nanjun-zhou-703a08354/"
 
 [features]
 # Show a like button on the about page
@@ -44,11 +44,11 @@ type = "page"
 target = "publications"
 href = "/publications"
 
-[[navigation]]
-title = "Teaching"
-type = "page"
-target = "teaching"
-href = "/teaching"
+# [[navigation]]
+# title = "Teaching"
+# type = "page"
+# target = "teaching"
+# href = "/teaching"
 
 [[navigation]]
 title = "Awards"
@@ -56,11 +56,11 @@ type = "page"
 target = "awards"
 href = "/awards"
 
-[[navigation]]
-title = "Services"
-type = "page"
-target = "services"
-href = "/services"
+# [[navigation]]
+# title = "Services"
+# type = "page"
+# target = "services"
+# href = "/services"
 
 [[navigation]]
 title = "CV"
