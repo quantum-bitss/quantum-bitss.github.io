@@ -1,5 +1,3 @@
-I am a PhD student at the School of Science, University of Example, advised by [Prof. Advisor One](https://example.com) and [Dr. Advisor Two](https://example.com).
+I am a master student from [The Hong Kong University of Science and Technology](https://hkust.edu.hk/). I earned my bachelor degree from [School of Computer Science & Engineering](https://www2.scut.edu.cn/cs/), [South China University of Technology](https://www.scut.edu.cn/new/), majoring in Computer Science. I was honored to be supervised by Prof. [Li Liu](https://liliu-avril.github.io/) from [AI Thrust](https://ait.hkust-gz.edu.cn/), HKUST (Guangzhou) and Prof. [Tong Zhang](http://dsail.vip/TeamMember.html) from [DSAIL](http://www.dsail.vip/), SCUT during my bachelor study. 
 
-Prior to this, I obtained a BSc degree with First Class Honours in Natural Science from the University of Example.
-
-My current research focuses on investigating the mathematical principles of natural philosophy.
+My research interest lies on **Trustworthy Machine Learning**. Currently, I focus on the security of **LLM agent**, including **Prompt Injection** and **Backdoor Learning**. I'm also interested in security issues in other domains of AI, including Diffusion Model, Audio and Computer Vision. 
