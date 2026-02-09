@@ -53,6 +53,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   }
 
   const content = getMarkdownContent(meta.source);
+  // 清理从笔记软件导出的内联 HTML 高亮标签，避免在页面上直接显示源码
+  const cleanedContent = content.replace(/<\/?.?span[^>]*>/g, "");
 
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

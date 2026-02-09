@@ -63,7 +63,10 @@ export default function BlogPage({ config, embedded = false }: BlogPageProps) {
             </header>
 
             <p className="text-sm text-neutral-600 dark:text-neutral-500 mb-4">
-              {post.summary || (post.content.length > 160 ? post.content.slice(0, 160) + '…' : post.content)}
+              {post.summary || (() => {
+                const plain = post.content.replace(/<[^>]+>/g, "");
+                return plain.length > 160 ? plain.slice(0, 160) + '…' : plain;
+              })()}
             </p>
 
             <Link
