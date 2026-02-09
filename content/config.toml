@@ -63,6 +63,12 @@ href = "/publications"
 # href = "/services"
 
 [[navigation]]
+ title = "Blog"
+ type = "page"
+ target = "blog"
+ href = "/blog"
+
+[[navigation]]
 title = "CV"
 type = "page"
 target = "cv"

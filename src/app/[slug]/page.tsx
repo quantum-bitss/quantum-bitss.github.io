@@ -5,11 +5,13 @@ import { parseBibTeX } from '@/lib/bibtexParser';
 import PublicationsList from '@/components/publications/PublicationsList';
 import TextPage from '@/components/pages/TextPage';
 import CardPage from '@/components/pages/CardPage';
+import BlogPage from '@/components/pages/BlogPage';
 import {
     BasePageConfig,
     PublicationPageConfig,
     TextPageConfig,
-    CardPageConfig
+    CardPageConfig,
+    BlogPageConfig
 } from '@/types/page';
 
 import { Metadata } from 'next';
@@ -55,6 +57,9 @@ export default async function DynamicPage({ params }: { params: Promise<{ slug: 
             )}
             {pageConfig.type === 'card' && (
                 <CardPage config={pageConfig as CardPageConfig} />
+            )}
+            {pageConfig.type === 'blog' && (
+                <BlogPageWrapper config={pageConfig as BlogPageConfig} />
             )}
         </div>
     );

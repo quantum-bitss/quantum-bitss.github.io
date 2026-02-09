@@ -1,0 +1,9 @@
+type = "blog"
+title = "Blog"
+description = "Notes and updates."
+
+[[posts]]
+title = "Welcome to my blog"
+date = "2026-02-09"
+source = "blog/welcome.md"
+tags = ["intro"]
