@@ -34,6 +34,8 @@ export interface BlogPostMeta {
     date?: string;
     source: string; // markdown file under content/
     tags?: string[];
+    slug?: string;
+    summary?: string;
 }
 
 export interface BlogPageConfig extends BasePageConfig {

@@ -6,4 +6,5 @@ description = "Notes and updates."
 title = "Welcome to my blog"
 date = "2026-02-09"
 source = "blog/welcome.md"
+summary = "这是我的第一篇博客的 TL;DR 简短介绍。"
 tags = ["intro"]

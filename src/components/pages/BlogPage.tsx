@@ -1,8 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import ReactMarkdown from 'react-markdown';
 import { BlogPageConfig, BlogPostMeta } from '@/types/page';
+import Link from 'next/link';
 
 interface BlogPost extends BlogPostMeta {
   content: string;
@@ -62,9 +62,16 @@ export default function BlogPage({ config, embedded = false }: BlogPageProps) {
               </div>
             </header>
 
-            <div className="prose prose-sm sm:prose dark:prose-invert max-w-none">
-              <ReactMarkdown>{post.content}</ReactMarkdown>
-            </div>
+            <p className="text-sm text-neutral-600 dark:text-neutral-500 mb-4">
+              {post.summary || (post.content.length > 160 ? post.content.slice(0, 160) + '…' : post.content)}
+            </p>
+
+            <Link
+              href={`/blog/${encodeURIComponent((post.slug || post.title).toLowerCase().replace(/\s+/g, '-') )}`}
+              className="inline-flex items-center text-sm font-medium text-accent hover:text-accent-dark hover:underline"
+            >
+              阅读全文 →
+            </Link>
           </motion.article>
         ))}
 
