@@ -75,3 +75,11 @@ function TextPageWrapper({ config }: { config: TextPageConfig }) {
     const content = getMarkdownContent(config.source);
     return <TextPage config={config} content={content} />;
 }
+
+function BlogPageWrapper({ config }: { config: BlogPageConfig }) {
+    const posts = config.posts?.map(post => ({
+        ...post,
+        content: getMarkdownContent(post.source),
+    })) || [];
+    return <BlogPage config={{ ...config, posts }} />;
+}
