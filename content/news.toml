@@ -18,3 +18,14 @@ content = "🎓📜 I graduate from SCUT."
 date = "2025-02"
 content = "Our latest work BackdoorDM on Diffusion Backdoor is released!"
 
+[[news]]
+date = "2024-12"
+content = "🎉🎉 My first academic work on audio backdoor defense was accepted by ICASSP 2025. Thanks to the support of Weilin and Prof. Liu!"
+
+[[news]]
+date = "2024-12"
+content = "I complete my Software Development Internship at ZTE Corporation. Thanks to all my mentors and co-workers!"
+
+[[news]]
+date = "2024-09"
+content = "I join the Data Mangement Group at ZTE Corporation as a Software Development Engineer, focusing on the development of a Data Agent."
