@@ -17,7 +17,7 @@
 **Research Assistant**
 [AI Thrust](https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/information-hub/artificial-intelligence/), HKUST (Guangzhou)
 *2024.1 - 2025.7*
-- Supervisor: Prof. [Liu Li](https://liliu-avril.github.io/)
+- Supervisor: Prof. [Li Liu](https://liliu-avril.github.io/)
 - Research Topic: Backdoor Learning, Audio Security
 
 **Software Development Engineer**
