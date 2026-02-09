@@ -56,30 +56,28 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <article className="bg-white dark:bg-neutral-900 p-6 rounded-xl shadow-sm border border-neutral-200 dark:border-neutral-800">
-        <header className="mb-6">
-          <h1 className="text-3xl font-serif font-bold text-primary mb-2">{meta.title}</h1>
-          <div className="flex flex-wrap items-center gap-2 text-sm text-neutral-500">
-            {meta.date && <span>{meta.date}</span>}
-            {meta.tags && meta.tags.length > 0 && (
-              <div className="flex flex-wrap gap-1">
-                {meta.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="px-2 py-0.5 rounded-full bg-neutral-50 dark:bg-neutral-800/60 border border-neutral-200 dark:border-neutral-700 text-[11px]"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            )}
-          </div>
-        </header>
-
-        <div className="prose prose-sm sm:prose dark:prose-invert max-w-none">
-          <ReactMarkdown>{content}</ReactMarkdown>
+      <header className="mb-6">
+        <h1 className="text-3xl font-serif font-bold text-primary mb-2">{meta.title}</h1>
+        <div className="flex flex-wrap items-center gap-2 text-sm text-neutral-500">
+          {meta.date && <span>{meta.date}</span>}
+          {meta.tags && meta.tags.length > 0 && (
+            <div className="flex flex-wrap gap-1">
+              {meta.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="px-2 py-0.5 rounded-full bg-neutral-50 dark:bg-neutral-800/60 border border-neutral-200 dark:border-neutral-700 text-[11px]"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
         </div>
-      </article>
+      </header>
+
+      <div className="prose prose-sm sm:prose dark:prose-invert max-w-none">
+        <ReactMarkdown>{content}</ReactMarkdown>
+      </div>
     </div>
   );
 }

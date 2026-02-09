@@ -70,7 +70,7 @@ export default function BlogPage({ config, embedded = false }: BlogPageProps) {
               href={`/blog/${encodeURIComponent((post.slug || post.title).toLowerCase().replace(/\s+/g, '-') )}`}
               className="inline-flex items-center text-sm font-medium text-accent hover:text-accent-dark hover:underline"
             >
-              阅读全文 →
+              view all →
             </Link>
           </motion.article>
         ))}
