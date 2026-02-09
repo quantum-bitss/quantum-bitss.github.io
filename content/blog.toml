@@ -3,8 +3,8 @@ title = "Blog"
 description = "Notes and updates."
 
 [[posts]]
-title = "Welcome to my blog"
+title = "HKUST IT Courses (Part I)"
 date = "2026-02-09"
-source = "blog/welcome.md"
-summary = "这是我的第一篇博客的 TL;DR 简短介绍。"
-tags = ["intro"]
+source = "blog/course1.md"
+summary = "The course introduction of HKUST IT postgraduate program."
+tags = ["hkust"]
