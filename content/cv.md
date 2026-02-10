@@ -4,8 +4,8 @@
 - GPA: 3.83/4.3
 - Supervisor: Prof. [Yangqiu Song](https://www.cse.ust.hk/~yqsong/)
 
-**South China University of Technology**, BE in Computer Science & Technology (Elite Class), *2021 - 2025*
-- GPA: 3.8/4.0
+**South China University of Technology**, BE in Computer Science & Technology, *2021 - 2025*
+- GPA: 3.8/4.0 (Elite Class, Top 5%)
 - Supervisor: Prof. [Tong Zhang](http://dsail.vip/TeamMember.html)
 
 ## Experience
