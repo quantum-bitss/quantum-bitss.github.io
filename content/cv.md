@@ -1,14 +1,14 @@
 ## Education
 
-**Zhejiang University**, PhD in Cyber Space Security, *2026 - 2029 (expected)*
+**Zhejiang University**, Ph.D. in Cyber Space Security, *2026 - 2029 (expected)*
 
 - Supervisor: Prof. [Zhan Qin](https://person.zju.edu.cn/en/zhanqin)
 
-**The Hong Kong University of Science of Technology**, MS in Information Technology, *2025 - 2026*
+**The Hong Kong University of Science of Technology**, M.S. in Information Technology, *2025 - 2026*
 - GPA: 3.83/4.3
 - Supervisor: Prof. [Yangqiu Song](https://www.cse.ust.hk/~yqsong/)
 
-**South China University of Technology**, BE in Computer Science & Technology, *2021 - 2025*
+**South China University of Technology**, B.E. in Computer Science & Technology, *2021 - 2025*
 - GPA: 3.8/4.0 (Elite Class, Top 5%)
 - Supervisor: Prof. [Tong Zhang](http://dsail.vip/TeamMember.html)
 
