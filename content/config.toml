@@ -1,13 +1,13 @@
 [site]
 title = "Nanjun Zhou"
-description = "Master student at HKUST"
+description = "PhD student at ZJU"
 favicon = "/favicon.svg"
-last_updated = "November 18, 2025"
+last_updated = "April 26, 2026"
 
 [author]
 name = "Nanjun Zhou"
-title = "Master Student"
-institution = "HKUST"
+title = "PhDStudent"
+institution = "The State Key Laboratory of Blockchain and Data Security, ZJU"
 avatar = "/profile.jpg"
 
 [social]
