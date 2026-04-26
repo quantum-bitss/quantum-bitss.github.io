@@ -1,6 +1,6 @@
 ## Education
 
-**The Hong Kong University of Science of Technology**, PhD in Cyber Space Security, *2026 - 2029 (expected)*
+**Zhejiang University**, PhD in Cyber Space Security, *2026 - 2029 (expected)*
 
 - Supervisor: Prof. [Zhan Qin](https://person.zju.edu.cn/en/zhanqin)
 
