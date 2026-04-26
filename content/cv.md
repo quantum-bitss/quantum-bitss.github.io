@@ -1,6 +1,10 @@
 ## Education
 
-**The Hong Kong University of Science of Technology**, MS in Information Technology, *2025 - Present*
+**The Hong Kong University of Science of Technology**, PhD in Cyber Space Security, *2026 - 2029 (expected)*
+
+- Supervisor: Prof. [Zhan Qin](https://person.zju.edu.cn/en/zhanqin)
+
+**The Hong Kong University of Science of Technology**, MS in Information Technology, *2025 - 2026*
 - GPA: 3.83/4.3
 - Supervisor: Prof. [Yangqiu Song](https://www.cse.ust.hk/~yqsong/)
 
