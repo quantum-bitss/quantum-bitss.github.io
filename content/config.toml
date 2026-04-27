@@ -1,12 +1,12 @@
 [site]
 title = "Nanjun Zhou"
-description = "PhD student at ZJU"
+description = "CS PhD student at ZJU"
 favicon = "/favicon.svg"
 last_updated = "April 26, 2026"
 
 [author]
 name = "Nanjun Zhou"
-title = "PhD Student"
+title = "CS PhD Student"
 institution = "ZJU"
 avatar = "/profile.jpg"
 
