@@ -1,6 +1,6 @@
 # 明天也要好好吃饭
 
-独立静态页：`public/tomorrow/`，发布路径 `/tomorrow/`。主页仅在个人资料下方增加入口。沿用现有 GitHub Pages 工作流，无新增运行依赖。
+独立静态页：`public/tomorrow/`，发布路径 `/tomorrow/`。主页不展示入口，通过网址访问；页面设置 `noindex, nofollow`，请求搜索引擎不收录。此设置不提供身份验证，知道网址的人仍可访问。沿用现有 GitHub Pages 工作流，无新增运行依赖。
 
 - `index.html`：中文页面与文案。
 - `style.css`：独立样式，适配手机、桌面和减少动态效果设置。
