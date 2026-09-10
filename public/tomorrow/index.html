@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbf5ed">
+  <meta name="description" content="给最可爱的你，安排两顿喜欢的饭和一杯快乐咖啡。">
+  <title>明天也要好好吃饭 · For you</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='85'%3E🍱%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+  <div class="page">
+    <header><a class="home" href="/">← 回到主页</a><span class="tiny">A LITTLE PLAN, A LOT OF LOVE <span class="heart">♥</span></span></header>
+    <main>
+      <section class="intro">
+        <span class="eyebrow">专 属 投 喂 计 划</span>
+        <div class="doodle" aria-hidden="true"><span class="spark">✧</span><span class="bowl">🍱</span><span class="little-heart">♥</span></div>
+        <h1>明天也要<br>好好<span>吃饭</span><i> ♡</i></h1>
+        <p>纠结吃什么这种小事，就交给我吧。<br>你只负责准时吃饭，和每天开心一点点。</p>
+      </section>
+      <section class="menu" aria-labelledby="menu-title">
+        <div class="menu-top"><div><span class="eyebrow">YOUR DAILY MENU</span><h2 id="menu-title">明日的快乐，安排好啦</h2></div><span class="date" id="date">准备中…</span></div>
+        <div class="tabs" aria-label="选择菜单日期"><button id="tomorrow" aria-pressed="true">明天吃什么</button><button id="today" aria-pressed="false">看看今天</button></div>
+        <div id="cards" class="cards" aria-live="polite"></div>
+        <div class="actions"><button class="primary" id="shuffle" disabled><span aria-hidden="true">⤨</span> 换一份心动搭配</button><button class="save" id="save" disabled>♡ 就吃这份</button></div>
+        <p id="status" class="status" role="status">正在打开你的小菜单…</p>
+        <noscript><p class="status">请开启浏览器 JavaScript，来抽取你的专属菜单。</p></noscript>
+        <div class="menu-bottom"><span>✦ 两顿不同店</span><span>✦ 每日一杯咖啡</span><span>✦ 和昨天有点不一样</span></div>
+      </section>
+      <section class="note"><span aria-hidden="true">💌</span><div><h2>给可爱的你</h2><p>好好吃饭，是今天和明天都要记得的小事。<br>希望每一顿都有喜欢的味道，每一天都有被惦记的感觉。</p></div><span class="note-heart" aria-hidden="true">♡</span></section>
+      <details><summary>小菜单里都有什么？ <span>＋</span></summary><div id="options"></div><p>盛香亭的三种粉随机选一；同一天不选同一家店。若有昨天的菜单，会避开相同的两家店组合（交换午晚餐也算相同）。咖啡可以重复。</p><p>菜单按设备当地日期生成，保存在当前浏览器；跨设备不会同步。「就吃这份」会确认当前菜单，再次换一份则会更新它。</p></details>
+    </main>
+    <footer>MADE WITH <span>♥</span> FOR YOU <small>好好吃饭，慢慢相爱。</small></footer>
+  </div>
+</body>
+</html>

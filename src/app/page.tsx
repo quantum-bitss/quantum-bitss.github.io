@@ -140,6 +140,9 @@ export default function Home() {
             features={config.features}
             researchInterests={researchInterests}
           />
+          <a href="/tomorrow/" className="mt-6 inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-accent transition-colors">
+            <span aria-hidden="true">🍱</span> 明天也要好好吃饭 ↗
+          </a>
         </div>
 
         {/* Right Column - Content */}
