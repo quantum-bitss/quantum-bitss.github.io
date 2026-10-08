@@ -13,6 +13,10 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
+env:
+  # Set to "false" and push to master to restore the original website.
+  SITE_PAUSED: "true"
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,16 +25,29 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Node
+        if: env.SITE_PAUSED != 'true'
         uses: actions/setup-node@v4
         with:
           node-version: "22"
           cache: "npm"
 
       - name: Install
+        if: env.SITE_PAUSED != 'true'
         run: npm install --legacy-peer-deps
 
       - name: Build
+        if: env.SITE_PAUSED != 'true'
         run: npm run build
+
+      - name: Build blank site while paused
+        if: env.SITE_PAUSED == 'true'
+        run: |
+          mkdir -p out
+          cat > out/index.html <<'HTML'
+          <!doctype html>
+          <html><head><meta charset="utf-8"><meta name="robots" content="noindex, nofollow"><title></title></head><body></body></html>
+          HTML
+          cp out/index.html out/404.html
 
       # 避免 GitHub Pages 用 Jekyll 处理，忽略 _next 等目录
       - name: Add .nojekyll
