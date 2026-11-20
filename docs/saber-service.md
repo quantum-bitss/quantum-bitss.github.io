@@ -2,6 +2,12 @@
 
 Public entry: `https://quantum-bitss.github.io/saber/`.
 
+The console lists the full deployed DTap attack-case catalog, with domain/threat
+filters, search, and 50-row pages. It has no difficulty classification. Backend
+availability controls selection: unsupported environments remain inspectable.
+New cases receive an isolated setup check before model calls; an available
+case is not a claim that a model-funded attack has already been evaluated.
+
 `public/saber/` contains only the static browser UI. The existing paused homepage
 stays blank. The deployment workflow copies this directory into `out/saber/`
 even when `SITE_PAUSED` is true. If the homepage is restored later, Next.js's

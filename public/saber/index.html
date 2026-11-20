@@ -83,12 +83,6 @@
 
         <fieldset>
           <legend>Evaluation scope</legend>
-          <span class="field-label">Difficulty</span>
-          <div class="segmented" id="difficulty-options">
-            <label><input type="checkbox" value="C1"><span>easy</span></label>
-            <label><input type="checkbox" value="C2" checked><span>moderate</span></label>
-            <label><input type="checkbox" value="C3"><span>hard</span></label>
-          </div>
           <span class="field-label">Threat model</span>
           <div class="segmented" id="threat-options">
             <label><input type="checkbox" value="direct" checked><span>Direct</span></label>
@@ -123,7 +117,7 @@
         </div>
         <details class="dtap-intro">
           <summary>About the DTap environments</summary>
-          <p>DecodingTrust-Agent Platform (DTap) is a controllable, interactive platform for red-teaming AI agents. It provides sandboxed environments for evaluating direct prompt injection and indirect injection through tools and environments. This service runs SABER on a selected set of DTap tasks.</p>
+          <p>DecodingTrust-Agent Platform (DTap) is a controllable, interactive platform for red-teaming AI agents. It provides sandboxed environments for evaluating direct prompt injection and indirect injection through tools and environments. Browse the full attack-case catalog from the deployed DTap release and select one task to evaluate with SABER.</p>
           <a href="https://decodingtrust-agent.com/" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Visit the DTap website</a>
         </details>
         <div class="case-toolbar">
@@ -145,13 +139,17 @@
                 <th>Case</th>
                 <th>Domain</th>
                 <th>Threat</th>
-                <th>Level</th>
               </tr>
             </thead>
             <tbody id="case-rows">
-              <tr><td colspan="5" class="empty-state">Loading catalog...</td></tr>
+              <tr><td colspan="4" class="empty-state">Loading catalog...</td></tr>
             </tbody>
           </table>
+        </div>
+        <div class="case-pagination" aria-label="Case pages">
+          <button id="cases-prev" class="button secondary" type="button">Previous</button>
+          <span id="case-page-info" aria-live="polite"></span>
+          <button id="cases-next" class="button secondary" type="button">Next</button>
         </div>
       </section>
 

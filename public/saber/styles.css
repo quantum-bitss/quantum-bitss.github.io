@@ -205,6 +205,9 @@ input::placeholder { color: #99a29c; }
 
 .table-wrap { width: 100%; overflow: auto; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
 .case-table-wrap { max-height: 356px; }
+.case-pagination { display: flex; align-items: center; justify-content: flex-end; gap: 12px; margin-top: 14px; font-size: 13px; color: var(--muted); }
+.case-pagination button:disabled { opacity: .45; cursor: default; }
+.case-unavailable { display: block; color: var(--muted); font-size: 12px; margin-top: 3px; }
 .data-table { width: 100%; border-collapse: collapse; font-size: 12px; }
 .data-table th {
   position: sticky;

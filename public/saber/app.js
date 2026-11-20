@@ -2,6 +2,8 @@
 
 const state = {
   cases: [],
+  casePage: 0,
+  pageSize: 50,
   selected: new Set(),
   maxCases: 1,
   activeJobId: "",
@@ -98,7 +100,7 @@ async function loadCatalog() {
   let payload;
   try { payload = await api("/v1/cases"); }
   catch (error) {
-    byId("case-rows").innerHTML = '<tr><td colspan="5" class="empty-state">The case catalog is unavailable. Please reload to try again.</td></tr>';
+    byId("case-rows").innerHTML = '<tr><td colspan="4" class="empty-state">The case catalog is unavailable. Please reload to try again.</td></tr>';
     throw error;
   }
   state.cases = payload.cases || [];
@@ -111,12 +113,10 @@ async function loadCatalog() {
 }
 
 function visibleCases() {
-  const difficulties = new Set(checkedValues("#difficulty-options input"));
   const threats = new Set(checkedValues("#threat-options input"));
   const domain = byId("domain-filter").value;
   const query = byId("case-search").value.trim().toLowerCase();
   return state.cases.filter((item) => {
-    if (difficulties.size && !difficulties.has(item.difficulty)) return false;
     if (threats.size && !threats.has(item.threat_model)) return false;
     if (domain && item.domain !== domain) return false;
     if (query && !`${item.case_id} ${item.risk_category}`.toLowerCase().includes(query)) return false;
@@ -125,21 +125,28 @@ function visibleCases() {
 }
 
 function renderCases() {
-  const rows = visibleCases();
-  byId("case-count").textContent = `${rows.length} cases`;
+  const matches = visibleCases();
+  const pages = Math.max(1, Math.ceil(matches.length / state.pageSize));
+  state.casePage = Math.min(state.casePage, pages - 1);
+  const offset = state.casePage * state.pageSize;
+  const rows = matches.slice(offset, offset + state.pageSize);
+  byId("cases-prev").disabled = state.casePage === 0;
+  byId("cases-next").disabled = state.casePage >= pages - 1;
+  byId("case-page-info").textContent = matches.length
+    ? `${offset + 1}–${offset + rows.length} of ${matches.length}` : "0 cases";
+  byId("case-count").textContent = `${matches.length} cases`;
   byId("selection-summary").textContent = state.selected.size
     ? `${state.selected.size}/${state.maxCases} explicitly selected`
     : "Select one case";
   byId("case-rows").innerHTML = rows.length
     ? rows.map((item) => `
       <tr>
-        <td class="checkbox-column"><input class="case-checkbox" type="checkbox" data-case-id="${escapeHtml(item.case_id)}" ${state.selected.has(item.case_id) ? "checked" : ""} aria-label="Select ${escapeHtml(item.case_id)}"></td>
-        <td><button type="button" class="case-detail-link" data-case-id="${escapeHtml(item.case_id)}">${escapeHtml(item.case_id)}</button></td>
+        <td class="checkbox-column"><input class="case-checkbox" type="checkbox" data-case-id="${escapeHtml(item.case_id)}" ${state.selected.has(item.case_id) ? "checked" : ""} ${item.availability?.runnable === false ? "disabled" : ""} aria-label="Select ${escapeHtml(item.case_id)}"></td>
+        <td><button type="button" class="case-detail-link" data-case-id="${escapeHtml(item.case_id)}">${escapeHtml(item.case_id)}</button>${item.availability?.runnable === false ? '<span class="case-unavailable">Environment unavailable</span>' : ""}</td>
         <td>${escapeHtml(item.domain)}</td>
         <td><span class="tag ${escapeHtml(item.threat_model)}">${escapeHtml(item.threat_model)}</span></td>
-        <td><span class="tag level">${escapeHtml(({ C1: "easy", C2: "moderate", C3: "hard" })[item.difficulty] || item.difficulty)}</span></td>
       </tr>`).join("")
-    : '<tr><td colspan="5" class="empty-state">No cases match the current filters.</td></tr>';
+    : '<tr><td colspan="4" class="empty-state">No cases match the current filters.</td></tr>';
 
   document.querySelectorAll(".case-detail-link").forEach((button) => {
     button.addEventListener("click", () => showCaseDetails(button.dataset.caseId));
@@ -172,6 +179,7 @@ async function showCaseDetails(caseId, scroll = true) {
     if (request !== detailRequest) return;
     const block = (title, value) => `<div class="case-detail-block"><h3>${escapeHtml(title)}</h3><pre>${escapeHtml(typeof value === "string" ? value : JSON.stringify(value, null, 2))}</pre></div>`;
     content.innerHTML = `<p class="detail-case-id">${escapeHtml(item.case_id)}</p>`
+      + (item.availability?.message ? `<p class="field-hint">${escapeHtml(item.availability.message)}</p>` : "")
       + block("Task", item.task_instruction || (item.threat_model === "direct" ? "No separate benign task: the generated attack prompt is delivered as the user instruction." : "Not specified in the task configuration."))
       + block("Attack goal", item.attack_goal)
       + block("Attack scope", item.constraints)
@@ -427,8 +435,8 @@ function stopPolling() {
 function resetForm() {
   byId("run-form").reset();
   state.selected.clear();
+  state.casePage = 0;
   byId("budget").value = state.reviewMode ? "1" : "3";
-  byId("difficulty-options").querySelector('input[value="C2"]').checked = true;
   document.querySelectorAll("#threat-options input").forEach((input) => { input.checked = true; });
   byId("domain-filter").value = "";
   byId("case-search").value = "";
@@ -474,9 +482,12 @@ function bindEvents() {
     link.click();
     window.setTimeout(() => URL.revokeObjectURL(url), 1000);
   });
-  byId("case-search").addEventListener("input", renderCases);
-  byId("domain-filter").addEventListener("change", renderCases);
-  document.querySelectorAll("#difficulty-options input, #threat-options input").forEach((input) => input.addEventListener("change", renderCases));
+  const filterChanged = () => { state.casePage = 0; renderCases(); };
+  byId("case-search").addEventListener("input", filterChanged);
+  byId("domain-filter").addEventListener("change", filterChanged);
+  document.querySelectorAll("#threat-options input").forEach((input) => input.addEventListener("change", filterChanged));
+  byId("cases-prev").addEventListener("click", () => { state.casePage = Math.max(0, state.casePage - 1); renderCases(); });
+  byId("cases-next").addEventListener("click", () => { state.casePage += 1; renderCases(); });
   document.querySelectorAll(".secret-toggle").forEach((button) => {
     button.addEventListener("click", () => {
       const input = byId(button.dataset.target);
@@ -485,7 +496,9 @@ function bindEvents() {
     });
   });
   byId("select-visible").addEventListener("click", () => {
-    const visible = visibleCases();
+    const offset = state.casePage * state.pageSize;
+    const visible = visibleCases().slice(offset, offset + state.pageSize)
+      .filter(item => item.availability?.runnable !== false);
     const capacity = state.maxCases - state.selected.size;
     visible.slice(0, Math.max(0, capacity)).forEach((item) => state.selected.add(item.case_id));
     if (visible.length > capacity) showToast(`Selected the first ${Math.max(0, capacity)} visible cases.`);
