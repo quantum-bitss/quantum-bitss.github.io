@@ -51,6 +51,10 @@ jobs:
           # Pad the empty error page for hosting/browser error-page handling.
           printf '<!--%0600d-->\n' 0 >> out/404.html
 
+      - name: Publish SABER console while homepage stays paused
+        if: env.SITE_PAUSED == 'true'
+        run: cp -R public/saber out/saber
+
       # 避免 GitHub Pages 用 Jekyll 处理，忽略 _next 等目录
       - name: Add .nojekyll
         run: touch out/.nojekyll
