@@ -436,6 +436,15 @@ function resetForm() {
 }
 
 function bindEvents() {
+  // Keep the job recovery code in the fragment when navigating this page.
+  document.querySelectorAll('.topbar nav a[href^="#"]').forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const target = byId(link.getAttribute("href").slice(1));
+      if (!target) return;
+      event.preventDefault();
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
   window.addEventListener?.("hashchange", () => {
     const previous = state.activeJobId;
     restoreJobFromUrl();

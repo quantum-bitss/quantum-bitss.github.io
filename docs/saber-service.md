@@ -7,6 +7,11 @@ stays blank. The deployment workflow copies this directory into `out/saber/`
 even when `SITE_PAUSED` is true. If the homepage is restored later, Next.js's
 static export includes the directory automatically.
 
+In Settings → Pages, set **Source** to **GitHub Actions**. The legacy
+"Deploy from a branch" publisher must be disabled: otherwise its automatic
+Jekyll deployment can overwrite this workflow's blank homepage and console.
+The workflow also supports manual runs from the Actions tab.
+
 The backend remains on the existing evaluation server. Its HTTPS origin is the
 `saber-api-base` meta element in `public/saber/index.html`; the CSP `connect-src`
 must match. No API credentials, backend source, or server address is published
