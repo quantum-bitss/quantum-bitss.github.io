@@ -1,0 +1,8 @@
+/* Match the project page while preserving the console's layout and controls. */
+.prism-console{--page:#f5f9fb;--ink:#142532;--muted:#526573;--green:#007e9f;--green-dark:#006b87;--green-soft:#e8f7fb;--line:#dce7eb}
+.prism-console .brand-mark{color:#007e9f;background:#e8f7fb;font-weight:600}
+.prism-console .button.primary{background:#007e9f;border-color:#007e9f}
+.prism-console .button.primary:hover{background:#006b87;border-color:#006b87}
+.prism-console .eyebrow,.prism-console .dtap-intro a,.prism-console .case-detail-link{color:#007e9f}
+.prism-console .data-table tbody tr:has(input:checked){background:#eaf8fc}
+.prism-console .tag.indirect{background:#e8f7fb;color:#00718d}

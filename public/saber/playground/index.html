@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="saber-api-base" content="https://hats-appraisal-sussex-arrangements.trycloudflare.com">
+  <meta http-equiv="Content-Security-Policy" content="default-src &#x27;none&#x27;; script-src &#x27;self&#x27;; style-src &#x27;self&#x27; &#x27;unsafe-inline&#x27;; connect-src https://hats-appraisal-sussex-arrangements.trycloudflare.com; img-src &#x27;self&#x27; data:; font-src &#x27;self&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;; object-src &#x27;none&#x27;">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <meta name="color-scheme" content="light">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>SABER Evaluation Console</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../playground.css">
+</head>
+<body class="prism-console">
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">S</div>
+      <div>
+        <strong>SABER</strong>
+        <span>Agent security evaluation</span>
+      </div>
+    </div>
+    <nav aria-label="Service information">
+      <a href="../">Project</a>
+      <a href="#case-title">Case browser</a>
+      <a href="#job-title">Evaluation</a>
+      <a href="#review-privacy">Privacy &amp; usage</a>
+    </nav>
+  </header>
+
+  <section class="console-intro" aria-labelledby="console-title">
+    <div>
+      <p class="eyebrow">SABER / Interactive playground</p>
+      <h1 id="console-title">SABER playground.</h1>
+      <p class="intro-description">Choose a task, connect your models, and follow the target agent from the first action to the final outcome.</p>
+    </div>
+  </section>
+
+  <main class="workspace">
+    <aside class="configuration" aria-labelledby="new-run-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Run configuration</p>
+          <h2 id="new-run-title">New evaluation</h2>
+        </div>
+        <button id="reset-form" class="button quiet" type="button">Reset</button>
+      </div>
+
+      <form id="run-form" autocomplete="off">
+        <p class="form-intro">Connect an OpenAI-compatible endpoint. One API key is shared across all three models.</p>
+        <fieldset>
+          <legend>Shared API connection</legend>
+          <label>
+            Base URL
+            <input id="backend-url" name="backend-url" type="url" placeholder="https://backend.example/v1" required spellcheck="false">
+          </label>
+          <label>
+            API key
+            <span class="secret-field">
+              <input id="backend-key" name="backend-key" type="password" required autocomplete="new-password" spellcheck="false">
+              <button class="secret-toggle" type="button" data-target="backend-key" aria-label="Show API key" title="Show or hide API key">Show</button>
+            </span>
+          </label>
+          <p>Shared by the red-team, target-agent, and judge models.</p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Models</legend>
+          <label>
+            Red-team model
+            <input id="red-model" name="red-model" required spellcheck="false">
+          </label>
+          <label>
+            Target-agent model
+            <input id="target-model" name="target-model" required spellcheck="false">
+          </label>
+          <label>
+            Judge model
+            <input id="judge-model" name="judge-model" required spellcheck="false">
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Evaluation scope</legend>
+          <span class="field-label">Threat model</span>
+          <div class="segmented" id="threat-options">
+            <label><input type="checkbox" value="direct" checked><span>Direct</span></label>
+            <label><input type="checkbox" value="indirect" checked><span>Indirect</span></label>
+          </div>
+          <label>
+            Attack budget
+            <input id="budget" type="number" min="1" max="3" value="1" required>
+          </label>
+          <p class="field-hint">Maximum attack candidates to evaluate for the selected case.</p>
+        </fieldset>
+
+        <div id="form-error" class="message error hidden" role="alert"></div>
+        <button id="submit-run" class="button primary submit" type="submit" disabled>
+          Start evaluation
+        </button>
+      </form>
+    </aside>
+
+    <section class="main-column">
+      <section class="case-browser" aria-labelledby="case-title">
+        <div class="section-heading wide">
+          <div>
+            <p class="eyebrow">Explore the tasks</p>
+            <h2 id="case-title">Case browser</h2>
+          </div>
+          <div class="selection-actions">
+            <span id="selection-summary" class="selection-summary">Select one case</span>
+            <button id="select-visible" class="button secondary" type="button">Select first</button>
+            <button id="clear-selection" class="button quiet" type="button">Clear</button>
+          </div>
+        </div>
+        <details class="dtap-intro">
+          <summary>About the DTap environments</summary>
+          <p>DecodingTrust-Agent Platform (DTap) is a controllable, interactive platform for red-teaming AI agents. It provides sandboxed environments for evaluating direct prompt injection and indirect injection through tools and environments. Browse the full attack-case catalog from the deployed DTap release and select one task to evaluate with SABER.</p>
+          <a href="https://decodingtrust-agent.com/" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Visit the DTap website</a>
+        </details>
+        <div class="case-toolbar">
+          <label class="search-field">
+            <span class="sr-only">Search cases</span>
+            <input id="case-search" type="search" placeholder="Search case ID or risk category">
+          </label>
+          <label>
+            <span class="sr-only">Domain</span>
+            <select id="domain-filter"><option value="">All domains</option></select>
+          </label>
+          <span id="case-count" class="case-count">0 cases</span>
+        </div>
+        <div class="table-wrap case-table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th class="checkbox-column"><span class="sr-only">Select</span></th>
+                <th>Case</th>
+                <th>Domain</th>
+                <th>Threat</th>
+              </tr>
+            </thead>
+            <tbody id="case-rows">
+              <tr><td colspan="4" class="empty-state">Loading catalog...</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="case-pagination" aria-label="Case pages">
+          <button id="cases-prev" class="button secondary" type="button">Previous</button>
+          <span id="case-page-info" aria-live="polite"></span>
+          <button id="cases-next" class="button secondary" type="button">Next</button>
+        </div>
+      </section>
+
+      <section id="case-detail-panel" class="hidden" aria-labelledby="case-detail-title">
+        <div class="section-heading"><h2 id="case-detail-title">Case details</h2></div>
+        <div id="case-detail-content" aria-live="polite"></div>
+      </section>
+
+      <section class="job-panel" aria-labelledby="job-title">
+        <div class="section-heading wide">
+          <div>
+            <p class="eyebrow">Execution</p>
+            <h2 id="job-title">Current job</h2>
+          </div>
+          <div class="job-actions">
+            <span id="job-status" class="status-chip neutral">No active job</span>
+            <button id="cancel-job" class="button danger hidden" type="button">Cancel job</button>
+          </div>
+        </div>
+        <div id="job-empty" class="empty-state job-empty"><strong>Your next evaluation starts here.</strong><p>Select a case and connect your models, or reopen a previous result with its job code.</p></div>
+        <div id="job-content" class="hidden">
+          <div class="job-meta">
+            <div><span>Job ID</span><code id="job-id">-</code></div>
+            <div><span>Cases</span><strong id="job-cases">-</strong></div>
+            <div><span>Budget</span><strong id="job-budget">-</strong></div>
+          </div>
+          <div class="progress-track" aria-label="Job progress">
+            <div id="job-progress-bar" class="progress-bar"></div>
+          </div>
+          <div id="job-progress-label" class="progress-label">Queued</div>
+          <div class="run-time">Elapsed <strong id="job-elapsed">0s</strong></div>
+          <div class="trajectory-panel">
+            <h3>Target agent trajectory</h3>
+            <p class="muted">Updates every 2 seconds when records become available. Shows the latest 200 target events.</p>
+            <div id="job-trajectory" class="trajectory-feed" aria-live="polite">Waiting for execution records…</div>
+          </div>
+          <div id="job-error" class="message error hidden" role="alert"></div>
+        </div>
+      </section>
+
+      <section id="results-panel" class="results-panel hidden" aria-labelledby="results-title">
+        <div class="section-heading wide">
+          <div>
+            <p class="eyebrow">Single-case test</p>
+            <h2 id="results-title">Attack result</h2>
+          </div>
+          <button id="download-result" class="button secondary" type="button">Download result</button>
+          <button id="toggle-json" class="button secondary" type="button">Raw JSON</button>
+        </div>
+        <div class="single-result">
+          <div><span>Final attack result</span><strong id="attack-outcome">—</strong></div>
+          <div><span>Execution time</span><strong id="result-elapsed">—</strong></div>
+        </div>
+        <h3>Final attack instance</h3>
+        <p id="attack-instance-note" class="muted"></p>
+        <pre id="attack-instance" class="payload-code"></pre>
+        <pre id="raw-result" class="raw-json hidden"></pre>
+      </section>
+
+      <section class="history-panel" aria-labelledby="review-privacy">
+        <h2 id="review-privacy">Privacy &amp; usage</h2>
+        <p>This application does not log visitor IP addresses or use analytics, tracking cookies, or browser fingerprinting.</p>
+        <p>Your Base URL and API key are used only for your evaluation, including judge calls. They are not saved in browser storage or result summaries.</p>
+        <p>Temporary credential files and raw logs are deleted when the run ends. The result, attack instance and sanitized trajectory are automatically deleted about 2 hours after completion.</p>
+        <div class="resume-row"><label>Reopen a job with its code
+          <input id="resume-code" autocomplete="off" spellcheck="false" maxlength="32" placeholder="32-character job code">
+        </label>
+        <button id="resume-job" class="button secondary" type="button">Open result</button>
+        </div>
+      </section>
+    </section>
+  </main>
+  <footer class="console-footer">SABER <span>Single-case evaluation on DTap</span></footer>
+
+  <div id="toast" class="toast hidden" role="status"></div>
+  <script src="../app.js" defer></script>
+</body>
+</html>
