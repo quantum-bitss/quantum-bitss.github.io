@@ -13,9 +13,9 @@ method (p. 6), IPI comparison (p. 7), and DPI/backend results (p. 8). They retai
 the original values and labels. The main study's 96 cases are distinct from
 the full case catalog available in the playground.
 
-Released samples: `https://anonymous.4open.science/r/SABER-BD80/`.
-ZIP: `https://anonymous.4open.science/api/repo/SABER-BD80/zip`.
-Browser access and an actual ZIP download were verified on November 24, 2026.
+Released samples: `https://github.com/quantum-bitss/SABER`.
+ZIP: `https://github.com/quantum-bitss/SABER/archive/refs/heads/main.zip`.
+Public repository access and an actual ZIP download were verified on November 24, 2026.
 The archive is externally hosted; its availability is not controlled by Pages.
 
 The console lists the full deployed DTap attack-case catalog, with domain/threat
