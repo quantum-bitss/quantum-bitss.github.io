@@ -7,3 +7,26 @@
 @media(max-width:850px){.site-header{padding:14px 22px}nav{gap:16px}.hero{padding:48px 24px}.hero-name{font-size:58px}.hero h1{font-size:42px}.desktop-break{display:none}.section{padding:55px 24px}h2{font-size:38px}.intro-grid{grid-template-columns:1fr;gap:28px}.overview-figure{max-width:650px}.research-facts div+div{padding-left:20px}.backend-grid{gap:24px}.table-results{grid-template-columns:1fr}.dpi-table{max-width:650px}.resource-list>article{grid-template-columns:150px 1fr;gap:20px}.method-steps{gap:18px}.method-steps article+article{padding-left:18px}footer{padding:28px 24px;flex-wrap:wrap}}
 @media(max-width:580px){body{font-size:16px}.site-header{position:relative;flex-wrap:wrap;gap:12px;padding:16px 20px}nav{width:100%;gap:14px;justify-content:space-between}nav a{font-size:12px}nav .nav-cta{padding:4px 8px}.hero{padding:36px 20px 40px}.hero-name{font-size:55px;margin:12px auto}.hero h1{font-size:34px}.hero-summary{font-size:17px;margin:22px auto}.authors{font-size:13px;column-gap:16px}.affiliations{font-size:12px}.hero-actions{gap:9px}.button{padding:10px 15px;font-size:13px}.hero-footnote{font-size:11px}.section{padding:44px 20px}h2{font-size:34px}.section-label{font-size:11px}.research-facts{margin-top:30px;gap:15px}.research-facts div+div{padding-left:14px}.research-facts dt{font-size:18px;line-height:1.3}.research-facts dd{font-size:12px}.overview-figure,.pipeline,.paper-figure{padding:16px}.overview-figure img{margin:10px 0 18px}.method-steps{grid-template-columns:1fr;gap:20px}.method-steps article+article{padding:20px 0 0;border-left:0;border-top:1px solid var(--line)}.method-steps h3{font-size:18px;margin-bottom:8px}.stage-strip{grid-template-columns:repeat(2,1fr);gap:20px}.result-heading,.backend-grid{grid-template-columns:1fr;gap:16px}.result-heading h3{max-width:none;font-size:23px;margin-bottom:0}.backend-grid{margin:34px 0}.backend-grid .paper-figure{padding:20px}.main-results summary{font-size:18px}.main-results summary span{display:block;margin:4px 0 0 20px}.table-results .paper-figure{padding:14px}.table-results h3{margin-bottom:15px}.resource-list>article{grid-template-columns:1fr;gap:10px;padding:28px 0}.resource-list h3{font-size:28px}.resource-tag{font-size:12px}.resource-list .actions{gap:9px}footer{gap:14px}footer p{width:100%;order:3}.paper-figure figcaption{font-size:12px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+.selection-note{font-size:14px;max-width:850px;margin:-14px 0 30px;color:#60727e}
+.example-list{border-top:1px solid #cddfe6}
+.example{border-bottom:1px solid #cddfe6;padding:24px 0}
+.example summary{display:flex;gap:24px;align-items:center;justify-content:space-between;cursor:pointer;list-style:none}
+.example summary::-webkit-details-marker{display:none}
+.example summary>span:first-child{flex:1}
+.example summary strong{display:block;font:600 27px/1.25 var(--serif);margin-top:6px}
+.example-meta{font-size:12px;font-weight:550;color:var(--blue)}
+.example-outcome{font-size:12px;color:#17603b;background:#e9f4ee;border:1px solid #cce2d5;border-radius:6px;padding:5px 10px;white-space:nowrap}
+.example summary::after{content:'+';font-size:25px;color:var(--blue);font-weight:300}
+.example[open] summary::after{content:'−'}
+.example-body{padding:24px 0 0;max-width:960px}
+.example-context{display:grid;grid-template-columns:1.5fr 1fr;gap:26px;margin:0 0 26px}
+.example-context dt{font-size:12px;color:var(--blue);font-weight:600;margin-bottom:6px}
+.example-context dd{margin:0;color:var(--muted);font-size:15px}
+.example-body h3{font-size:16px}
+.example-timeline{list-style:none;padding:0;margin:0 0 24px;border-left:2px solid #b9dce6}
+.example-timeline li{padding:0 0 18px 22px}.example-timeline li:last-child{padding-bottom:0}
+.example-timeline span{font-size:12px;font-weight:550;color:var(--blue)}
+.example-timeline p{font-size:15px;margin-top:4px}
+.example-interpretation{font-size:15px;color:var(--ink)}
+.example-note{font-size:12px;margin:14px 0}
+@media(max-width:580px){nav{flex-wrap:wrap;justify-content:flex-start;gap:9px 16px}nav .nav-cta{margin-left:auto}.example summary{gap:10px;flex-wrap:wrap}.example summary>span:first-child{flex-basis:100%}.example summary strong{font-size:25px}.example summary::after{margin-left:auto}.example-context{grid-template-columns:1fr;gap:18px}.example-body{padding-top:20px}}
