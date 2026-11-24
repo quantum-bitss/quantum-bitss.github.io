@@ -25,8 +25,27 @@ figure img{width:100%}
 .method-description{max-width:920px;margin:26px auto 0;color:var(--muted)}
 .results{margin-top:56px;padding-top:34px;border-top:1px solid var(--line)}
 figcaption{margin-top:14px;font-size:13px;line-height:1.65;color:var(--muted)}
-.result-pair{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-top:42px;align-items:start}
+.result-pair{display:grid;grid-template-columns:1fr 1fr;gap:36px;max-width:920px;margin:36px auto 0;align-items:start}
 footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-top:54px;padding:24px 0 30px;border-top:1px solid var(--line);font-size:12px}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--blue)}
 @media(max-width:720px){main{width:calc(100% - 36px)}.hero{padding:32px 0}h1{font-size:34px}h1 br{display:none}h2{font-size:30px;margin-bottom:24px}.project-icon{width:40px;height:40px;margin-bottom:16px}nav{gap:8px;margin-top:22px}nav a{padding:6px 12px;font-size:13px}.method-description{font-size:15px;margin-top:20px}.results{margin-top:36px;padding-top:26px}.result-pair{grid-template-columns:1fr;gap:28px;margin-top:28px}figcaption{font-size:12px}footer{margin-top:36px}}
+
+.result-summary{max-width:920px;color:var(--muted);margin:0 auto 28px}
+.main-table{max-width:760px;margin:0 auto}
+.revisit-figure{max-width:960px;margin:0 auto}
+.trajectory-note{font-size:13px;color:var(--muted);margin-top:-12px;max-width:850px}
+.trajectory{margin-top:30px;padding-top:28px;border-top:1px solid var(--line)}
+.trajectory h3{font:600 25px/1.25 'Crimson Text',Georgia,serif;margin:0 0 12px}
+.case-context{font-size:14px;color:var(--muted);max-width:900px}
+.case-context strong{font-weight:600;color:var(--ink)}
+.trace-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));list-style:none;padding:0;margin:22px 0;gap:24px}
+.trace-steps li{border-left:2px solid #c7eaf3;padding-left:16px;min-width:0}
+.step-label{font-size:12px;font-weight:600;color:var(--blue)}
+.trace-steps p{font-size:14px;color:var(--muted);margin:8px 0}
+code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.88em;overflow-wrap:anywhere}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f4f8fa;padding:10px 12px;border-radius:4px;font-size:13px;line-height:1.65;margin:10px 0}
+blockquote{margin:12px 0 0;font-size:13px;line-height:1.7;color:var(--muted)}
+.trace-outcome{font-size:14px;max-width:960px}
+.source-link{display:inline-block;font-size:12px;margin-top:10px}
+@media(max-width:720px){.trace-steps{grid-template-columns:1fr;gap:18px}.result-summary{font-size:15px}.trajectory h3{font-size:24px}.trajectory{margin-top:24px;padding-top:24px}}
