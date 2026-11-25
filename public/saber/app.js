@@ -370,7 +370,7 @@ function renderResults(result) {
   byId("attack-outcome").textContent = labels[view.outcome] || labels.inconclusive;
   byId("result-elapsed").textContent = duration(view.elapsed_seconds);
   byId("attack-instance").textContent = view.attack_instance ? JSON.stringify(view.attack_instance, null, 2) : "No evaluated final attack instance is available.";
-  byId("attack-instance-note").textContent = view.selected_iteration ? `Selected from iteration ${view.selected_iteration}. Sensitive values are redacted.` : "";
+  byId("attack-instance-note").textContent = [view.notice, view.selected_iteration ? `Selected from iteration ${view.selected_iteration}. Sensitive values are redacted.` : ""].filter(Boolean).join(" ");
   byId("raw-result").textContent = JSON.stringify(view, null, 2);
   renderTrajectory(view);
 }
