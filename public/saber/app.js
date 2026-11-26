@@ -301,7 +301,7 @@ function renderStage(job) {
   const stage = job.execution?.stage;
   byId('job-stage-title').textContent = stageTitle(stage) || 'Evaluation in progress';
   byId('job-stage-detail').textContent = stage?.id === 'environment'
-    ? 'Checking cached images and preparing isolated tools. No target trace has been recorded yet: setup or the target’s first model response may still be pending.'
+    ? 'Checking cached images and preparing isolated tools. No target trace for this step has been recorded yet: setup or the target’s first model response may still be pending.'
     : stage?.detail || 'Waiting for the next execution update. Target activity will appear when available.';
   byId('job-stage-time').textContent = stage
     ? `In this stage: ${duration(stage.elapsed_seconds)} · Last recorded progress: ${duration(stage.idle_seconds)} ago`
