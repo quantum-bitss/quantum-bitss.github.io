@@ -497,3 +497,9 @@ summary { cursor: pointer; overflow-wrap: anywhere; }
   .single-result { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) { .prism-console * { scroll-behavior: auto !important; transition: none !important; } }
+/* Execution phases use real artifact activity rather than a simulated percentage. */
+.execution-stage { margin: 16px 0; padding: 16px 18px; border: 1px solid #dbe3e9; border-left: 3px solid #48748a; border-radius: 8px; background: #f6f9fa; }
+.execution-stage strong { color: #284c60; font-size: 15px; }
+.execution-stage p { margin: 7px 0; line-height: 1.6; font-size: 14px; }
+.execution-stage .muted { font-size: 12px; }
+.execution-stage .stage-warning { color: #83581e; padding-top: 8px; }

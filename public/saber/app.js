@@ -12,6 +12,7 @@ const state = {
   pollTimer: null,
   rawResult: null,
   pollingErrorShown: false,
+  loadingJobs: new Set(),
 };
 
 const byId = (id) => document.getElementById(id);
@@ -46,8 +47,14 @@ function formatTime(timestamp) {
 async function api(path, options = {}) {
   // Set only by the published HTML; never accept a backend from a query string.
   const base = document.querySelector?.('meta[name="saber-api-base"]')?.content || "";
+  const controller = new AbortController();
+  // A stalled status request must not block all future status updates.
+  const timer = !options.method || options.method === 'GET'
+    ? window.setTimeout(() => controller.abort(), 20000) : null;
+  try {
   const response = await fetch(base + path, {
     ...options,
+    signal: controller.signal,
     credentials: "omit",
     referrerPolicy: "no-referrer",
     cache: "no-store",
@@ -62,6 +69,9 @@ async function api(path, options = {}) {
     throw error;
   }
   return body;
+  } finally {
+    if (timer !== null) window.clearTimeout(timer);
+  }
 }
 
 function showToast(message) {
@@ -278,6 +288,29 @@ async function submitRun(event) {
   }
 }
 
+function renderStage(job) {
+  const panel = byId('job-stage');
+  if (!panel) return;
+  const active = job.status === 'running';
+  panel.classList.toggle('hidden', !active);
+  if (!active) return;
+  const stage = job.execution?.stage;
+  byId('job-stage-title').textContent = stage?.title || 'Evaluation in progress';
+  byId('job-stage-detail').textContent = stage?.detail || 'Waiting for the next execution update. Target activity will appear when available.';
+  byId('job-stage-time').textContent = stage
+    ? `In this stage: ${duration(stage.elapsed_seconds)} · Last recorded progress: ${duration(stage.idle_seconds)} ago`
+    : 'The job is running; detailed stage information is not available for this run.';
+  const warning = byId('job-stage-warning');
+  let message = '';
+  if (Number(stage?.observer_age_seconds) >= 30) {
+    message = 'Execution status updates are delayed. This does not confirm that the worker is still progressing. Keep this job code; you can return to check it.';
+  } else if (Number(stage?.idle_seconds) >= 300) {
+    message = 'No new progress has been recorded for 5 minutes or more. A model or tool may still be responding; a stall is also possible. You can keep waiting or cancel this job.';
+  }
+  warning.textContent = message;
+  warning.classList.toggle('hidden', !message);
+}
+
 function renderJob(job) {
   byId("job-empty").classList.add("hidden");
   byId("job-content").classList.remove("hidden");
@@ -289,6 +322,8 @@ function renderJob(job) {
 
   byId("job-elapsed").textContent = duration(job.elapsed_seconds);
   renderTrajectory(job.execution);
+  renderStage(job);
+  byId('job-connection')?.classList.add('hidden');
   const progress = job.progress;
   let percent = job.status === "completed" ? 100 : 0;
   let label = job.status;
@@ -297,10 +332,11 @@ function renderJob(job) {
     byId("job-trajectory").textContent = "Waiting in queue. Target activity will appear when execution starts.";
     lastTrajectory = "";
   }
-  if (progress?.total) {
+  if (progress?.total && job.status !== 'queued') {
     const settled = Number(progress.completed || 0) + Number(progress.failed || 0);
     percent = Math.round((settled / Number(progress.total)) * 100);
-    label = `${settled}/${progress.total} settled, ${progress.running || 0} running`;
+    label = job.status === 'running' && job.execution?.stage
+      ? job.execution.stage.title : `${settled}/${progress.total} settled, ${progress.running || 0} running`;
   }
   byId("job-progress-bar").style.width = `${percent}%`;
   byId("job-progress-label").textContent = label;
@@ -315,7 +351,8 @@ function renderJob(job) {
 }
 
 async function loadJob(jobId) {
-  if (!jobId) return;
+  if (!jobId || state.loadingJobs.has(jobId)) return;
+  state.loadingJobs.add(jobId);
   if (byId("job-id").textContent !== jobId) {
     byId("results-panel").classList.add("hidden");
     state.rawResult = null;
@@ -355,10 +392,17 @@ async function loadJob(jobId) {
       stopPolling();
     } else {
       state.activeJobFinal = false;
+      const connection = byId('job-connection');
+      if (connection) {
+        connection.textContent = 'Connection interrupted — retrying automatically. The server may still be running your job; do not submit it again.';
+        connection.classList.remove('hidden');
+      }
       if (!state.pollingErrorShown) showToast("Connection interrupted. Retrying automatically…");
       state.pollingErrorShown = true;
       startPolling();
     }
+  } finally {
+    state.loadingJobs.delete(jobId);
   }
 }
 

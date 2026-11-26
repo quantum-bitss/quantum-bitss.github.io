@@ -182,6 +182,13 @@
           </div>
           <div id="job-progress-label" class="progress-label">Queued</div>
           <div class="run-time">Elapsed <strong id="job-elapsed">0s</strong></div>
+          <div id="job-stage" class="execution-stage hidden" role="status" aria-live="polite">
+            <strong id="job-stage-title"></strong>
+            <p id="job-stage-detail"></p>
+            <span id="job-stage-time" class="muted"></span>
+            <p id="job-stage-warning" class="stage-warning hidden"></p>
+          </div>
+          <div id="job-connection" class="message hidden" role="status"></div>
           <div class="trajectory-panel">
             <h3>Target agent trajectory</h3>
             <p class="muted">Updates every 2 seconds when records become available. Shows the latest 200 target events.</p>
