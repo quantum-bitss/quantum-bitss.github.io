@@ -288,6 +288,10 @@ async function submitRun(event) {
   }
 }
 
+function stageTitle(stage) {
+  return stage?.id === 'environment' ? 'Preparing environment / starting target' : stage?.title;
+}
+
 function renderStage(job) {
   const panel = byId('job-stage');
   if (!panel) return;
@@ -295,8 +299,10 @@ function renderStage(job) {
   panel.classList.toggle('hidden', !active);
   if (!active) return;
   const stage = job.execution?.stage;
-  byId('job-stage-title').textContent = stage?.title || 'Evaluation in progress';
-  byId('job-stage-detail').textContent = stage?.detail || 'Waiting for the next execution update. Target activity will appear when available.';
+  byId('job-stage-title').textContent = stageTitle(stage) || 'Evaluation in progress';
+  byId('job-stage-detail').textContent = stage?.id === 'environment'
+    ? 'Checking cached images and preparing isolated tools. No target trace has been recorded yet: setup or the target’s first model response may still be pending.'
+    : stage?.detail || 'Waiting for the next execution update. Target activity will appear when available.';
   byId('job-stage-time').textContent = stage
     ? `In this stage: ${duration(stage.elapsed_seconds)} · Last recorded progress: ${duration(stage.idle_seconds)} ago`
     : 'The job is running; detailed stage information is not available for this run.';
@@ -336,7 +342,7 @@ function renderJob(job) {
     const settled = Number(progress.completed || 0) + Number(progress.failed || 0);
     percent = Math.round((settled / Number(progress.total)) * 100);
     label = job.status === 'running' && job.execution?.stage
-      ? job.execution.stage.title : `${settled}/${progress.total} settled, ${progress.running || 0} running`;
+      ? stageTitle(job.execution.stage) : `${settled}/${progress.total} settled, ${progress.running || 0} running`;
   }
   byId("job-progress-bar").style.width = `${percent}%`;
   byId("job-progress-label").textContent = label;
